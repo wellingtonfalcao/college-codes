@@ -1,0 +1,32 @@
+header {
+  width: 851px;
+  height: 315px;
+  margin-bottom: 20px;
+}
+
+header img {
+  height: 305px;
+  border-radius: 0 20px 20px 0;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+.header-1{
+  background-image: url("img/carl-sagan-bg.jpg");
+}
+ 
+.header-2{
+  background-image: url("img/ada-lovelace-bg.jpg");
+}
+
+.header-3{
+  background-image: url("img/alan-turing-bg.jpg");
+}
+
+.header-4{
+  background-image: url("img/grace-hopper-bg.jpg");
+}
+
+.header-5{
+  background-image: url("img/aloisio-magalhaes-bg.jpg")
+}

@@ -1,0 +1,72 @@
+<!-- Crie um arquivo HTML com CSS e nele crie uma tabela com seis colunas e 
+  quatro linhas, e usando CSS, formate como uma tabela de excel, com bordas, 
+  backgrounds, cores de fontes e fundos, com conteúdo centralizado a seu gosto. -->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tabela estilizada como planilha</title>
+    <style>
+      table {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 25px auto;
+        border-collapse: collapse;
+        font-size: 0.8rem;
+        color: rgb(66, 66, 66)
+      }
+      
+      td, th {
+        background-color: rgb(242, 242, 242);
+        padding: 10px 15px;
+        border: 2px solid rgb(255, 255, 255);
+        text-align: left;
+      }
+
+      tr th {
+        background-color: rgb(210, 210, 210) ;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>E-mail</th>
+        <th>Telefone</th>
+        <th>Estado</th>
+        <th>Cidade</th>
+      </tr>
+      <tr>
+        <td>José</td>
+        <td>Couves</td>
+        <td>josecouves@email.com</td>
+        <td>(21) 99999-9999</td>
+        <td>Rio de Janeiro</td>
+        <td>Petrópolis</td>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>Bragança</td>
+        <td>mariabraganca@email.com</td>
+        <td>(66) 99999-9999</td>
+        <td>Minas Gerais</td>
+        <td>Ouro preto</td>
+      </tr>
+      <tr>
+        <td>Wallace</td>
+        <td>Almeida</td>
+        <td>wallacealmeida@email.com</td>
+        <td>(72) 99999-9999</td>
+        <td>Espirito Santo</td>
+        <td>Vila Velha</td>
+      </tr>
+    </table>
+  </body>
+</html>

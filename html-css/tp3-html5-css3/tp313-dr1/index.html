@@ -1,0 +1,53 @@
+<!-- Repliquem o exercício anterior e adicione estilo! Ou seja, 
+  usem o arquivo style.css para estilizar a tabela. Usem class ou id para diferenciar 
+  os elementos ou ainda utilizem seletores avançados para falar de elementos específicos. 
+  Alterações obrigatórias:
+
+Título da tabela deve estar em bold e com o font-size maior de 18px;
+As células da tabela que falam da parte da manhã deverão estar coloridas com cores quentes, 
+tanto fundo quanto texto. E as células que falam da parte da tarde deverão estar coloridas com cores frias.
+O resto da estilização é com vocês! Deixem a tabela bacana e fácil de ler!
+Testem o contraste entre cores. -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Layout Simples com Box-Model e Flexbox</title>
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="2">Agenda da Conferência</th>
+      </tr>
+      <tr>
+        <th>Horário</th>
+        <th>Sessões</th>
+      </tr>
+      <tr>
+        <td rowspan="3">Dia 1</td>
+        <td>Introdução a ciencia de dados: Manhã</td>
+      </tr>
+      <tr>
+        <td>Introdução a ciencia de dados: Tarde</td>
+      </tr>
+      <tr>
+        <td>Introdução a ciencia de dados: Noite</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Dia 2</td>
+        <td>Introdução lógico de programação: Manhã</td>
+      </tr>
+      <tr>
+        <td>Introdução lógico de programação: Tarde</td>
+      </tr>
+      <tr>
+        <td>Introdução lógico de programação: Noite</td>
+      </tr>
+    </table>
+  </body>
+</html> 

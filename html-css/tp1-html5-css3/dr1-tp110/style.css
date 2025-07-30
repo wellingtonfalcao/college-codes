@@ -1,0 +1,12 @@
+/*Borda vermelha.
+Tracejada.
+2px de tamanho.
+*/
+
+#card {
+  border: 2px dashed red;
+}
+
+#paragrafo {
+  text-align: center;
+}

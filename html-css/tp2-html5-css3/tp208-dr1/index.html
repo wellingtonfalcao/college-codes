@@ -1,0 +1,102 @@
+<!-- Construa uma página HTML com CSS incorporado e conteúdo autêntico de sua 
+  preferência, centralizado e em conformidade com as boas práticas semânticas. 
+  Adicione um título principal no topo e uma única seção para o corpo do conteúdo. 
+  Dentro dessa seção, organize três blocos respeitando a hierarquia de cabeçalhos: 
+  o primeiro nível deve conter um parágrafo relacionado ao seu título, enquanto o segundo nível 
+  deve incluir dois parágrafos. No rodapé da página, insira uma citação indicando a 
+  fonte do conteúdo utilizado para compor a página.
+
+Observações:
+
+Fonte Verdana cor black tamanho 12px.
+Títulos e subtítulos Fonte Tahoma cor cinza escuro.
+Parágrafos com recuo da primeira linha com 25px e alinhamento de texto justificado.
+Margem de 20px na página, margem de 10px nos blocos de texto.
+Não esqueça da “Div centralizante”. 
+Use Class na centralizante.
+Use:
+
+header;
+main;
+h1, h2, h3;
+section;
+article;
+p;
+cite;
+footer;
+padding. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arquivo padrão</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        font-size: 12px;
+        padding: 20px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: rgb(90, 90, 90);
+      }
+
+      p {
+        text-align: justify;
+        padding-top: 25px;
+      }
+
+      section {
+        padding: 0 10px;
+      }
+
+      .centralizar {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sonda Voyager 1 reativa transmissor de rádio inativo desde 1981</h1>
+    </header>
+    <main class="centralizar">
+      <section>
+        <article>
+          <p>
+            Lançada em 1977, a sonda Voyager 1 (assim como sua irmã Voyager 2),
+            são as únicas e mais longevas missões de exploração espacial em
+            atividad. A medida que a sonda se degrada (mais de 47 anos ativa)
+            seus componentes foram danificando e gradativamente desativados para
+            economizar energia.
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2>O que houve de errado?</h2>
+        <p>
+          A sonda com 2 trnasmissores S-Band e X-Band, sendo que o transmissor
+          X-band que é o que envia sinais mais fortes apresentou problema e
+          parou de enviar dados. Mas os engenheiros e cientistas conseguiram
+          ativar o S-Band que está inativo desde 1981, o que é incrível.
+        </p>
+        <h3>Quais os próximos passos?</h3>
+        <p>
+          Por conta do sinal ser muito fraco, os cientistas não estão muito
+          otimistas se a sonda enfim encerrará sua missão com a falha compelta
+          de seus transmissores. Mesmo que a sonda pare de funcionar é um marco
+          para a humanidade.
+        </p>
+      </section>
+    </main>
+    <footer><cite>Fonte: cnnbrasil.com.br</cite></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

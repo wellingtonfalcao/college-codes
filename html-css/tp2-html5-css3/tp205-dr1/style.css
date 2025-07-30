@@ -1,0 +1,9 @@
+/* Crie um arquivo HTML, com CSS e nele coloque uma imagem de 1200px x 400px com sombra a seu gosto, 
+e os cantos superior direito e inferior esquerdo arredondados em 12px. Use a tag semântica de imagens, 
+e defina o tamanho da imagem no arquivo CSS.*/
+
+img {
+  border-radius: 0 12px 0 12px;
+  width: 1200px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,58 @@
+<!-- Neste exercício, vocês deverão criar uma tabela HTML que utiliza colspan e 
+  rowspan para mesclar células, criando um layout mais complexo. Criem uma tabela de 
+  horários de uma conferência de dois dias, com sessões divididas em manhã, tarde e noite. 
+  A tabela deve incluir a fusão de células usando colspan para mesclar colunas e rowspan para mesclar linhas:
+
+Crie uma tabela com um cabeçalho que tenha duas colunas: "Horário" e "Sessões".
+Adicione um corpo para a tabela (não esqueçam de usar as tags para cabeçalho e corpo da tabela).
+No cabeçalho, use uma célula que se estende por duas colunas e exiba o título "Agenda da Conferência".
+Crie uma linha para cada dia da conferência, com uma célula que se estende por duas linhas (rowspan="3") 
+para cada dia.Dentro de cada dia, adicione linhas para os horários "Manhã", "Tarde" e "Noite", 
+cada uma ocupando uma célula.
+Use colspan para combinar células que cobrem várias sessões.Use rowspan para combinar células 
+que cobrem vários horários. -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Layout Simples com Box-Model e Flexbox</title>
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="2">Agenda da Conferência</th>
+      </tr>
+      <tr>
+        <th>Horário</th>
+        <th>Sessões</th>
+      </tr>
+      <tr>
+        <td rowspan="3">Dia 1</td>
+        <td>Introdução a ciencia de dados: Manhã</td>
+      </tr>
+      <tr>
+        <td>Introdução a ciencia de dados: Tarde</td>
+      </tr>
+      <tr>
+        <td>Introdução a ciencia de dados: Noite</td>
+      </tr>
+      <tr>
+        <tr>
+          <td rowspan="3">Dia 2</td>
+          <td>Introdução lógico de programação: Manhã</td>
+        </tr>
+        <tr>
+          <td>Introdução lógico de programação: Tarde</td>
+        </tr>
+        <tr>
+          <td>Introdução lógico de programação: Noite</td>
+        </tr>
+        <tr>
+    </table>
+  </body>
+</html> 

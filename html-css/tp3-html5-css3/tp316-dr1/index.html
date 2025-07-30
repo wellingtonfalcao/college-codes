@@ -1,0 +1,88 @@
+<!-- Repliquem o exercício anterior onde fizeram tabelas diferentes 
+  e reorganizem para termos uma única tabela!!! 
+  Teremos somente um titulo de "pontos turísticos":
+
+Criem mais uma coluna à esquerda da tabela onde vão colocar o nome da cidade. 
+Utilize o colspan para unir as células na coluna, já que cada cidade vai receber 
+mais de um ponto turístico com sua descrição.
+Coloque bordas, alterne as cores de uma linha pra outra, trabalhem para que fique 
+bem visível o que vamos ler. Definam tamanhos únicos, já que antes cada um havia feito o seu.
+No style.css, centralize os textos, formatem e coloquem cada cidade com uma cor diferente. 
+Diferencie também, através de css, o que é título do que é texto comum. 
+Alterem fontes e tamanhos e criem um padrão para a tabela não ficar bagunçada! Caprichem!
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grupo - Turismo 2</title>
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="3">Pontos turísticos - Rio de Janeiro</th>
+      </tr>
+      <tr>
+        <th>Cidade</th>
+        <th>Ponto Turístico</th>
+        <th>Descrição</th>
+      </tr>
+      <tr class="rio-de-janeiro">
+        <td rowspan="4" class="divisao-td">Rio de Janeiro</td>
+        <td>Pão de Açucar</td>
+        <td>Monumento Natural dos Morros do Pão de Açúcar e da Urca é um complexo de morros localizado no bairro da Urca, na cidade do Rio de Janeiro, no Brasil. É composto pelo Morro do Pão de Açúcar (que dá nome ao complexo) e pelo Morro da Urca. Junto com a estátua do Cristo Redentor, é o maior cartão-postal da cidade do Rio de Janeiro e um dos mais famosos do Brasil. Pelas características únicas, margeado pelas águas da baía de Guanabara, constitui-se em uma referência turística internacional para a cidade.</td>
+      </tr>
+      <tr class="rio-de-janeiro">
+        <td>Cristo Redentor</td>
+        <td>Cristo Redentor é uma estátua que retrata Jesus Cristo localizada no topo do morro do Corcovado, a 709 metros acima do nível do mar, dentro do Parque Nacional da Tijuca. Tem vista para parte considerável da cidade brasileira do Rio de Janeiro, sendo a frente da estátua voltada para a Baía de Guanabara e as costas para a Floresta da Tijuca. Feito de concreto armado e pedra-sabão, tem trinta metros de altura (uma das maiores estátuas do mundo), sem contar os oito metros do pedestal, sendo a mais alta estátua do mundo no estilo Art Déco. Seus braços se esticam por 28 metros de largura e a estrutura pesa 1145 toneladas</td>
+      </tr>
+      <tr class="rio-de-janeiro">
+        <td>Praia de Copacabana</td>
+        <td>A Praia de Copacabana é uma praia localizada no bairro de Copacabana, na Zona Sul da cidade do Rio de Janeiro, no Brasil. É considerada uma das praias mais famosas do mundo. Limitada pela Avenida Atlântica, Copacabana é sede de eventos de grande porte, como campeonatos mundiais de futebol de areia, campeonatos mundiais de vôlei, shows, dentre outros eventos.</td>
+      </tr>
+      <tr class="rio-de-janeiro">
+        <td class="divisao-td">Parque Nacional da Tijuca</td>
+        <td class="divisao-td">O Parque Nacional da Tijuca é uma unidade de conservação brasileira de proteção integral da natureza localizada integralmente na cidade do Rio de Janeiro. Entre os pontos turísticos do parque, trilhas, grutas e cachoeiras, encontram-se marcos famosos da cidade, como a Pedra da Gávea, o Corcovado, e o Pico da Tijuca, ponto mais alto do parque, elevando-se 1 022 metros acima do nível do mar. De relevo montanhoso, inclui áreas do Maciço da Tijuca. É administrado pelo Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio).</td>
+      </tr>
+      <tr class="sao-paulo">
+        <td rowspan="4" class="divisao-td">São Paulo</td>
+        <td>MASP</td>
+        <td>Museu de Arte de São Paulo Assis Chateaubriand (mais conhecido pelo acrônimo MASP) é um centro cultural e museu de arte brasileiro fundado em 1947 pelo empresário e jornalista paraibano Assis Chateaubriand. Entre os anos de 1947 e 1990, o crítico e marchand italiano Pietro Bardi assumiu a direção do MASP a convite de Chateaubriand.</td>
+      </tr>
+      <tr class="sao-paulo">
+        <td>Parque do Ibirapuera</td>
+        <td>O Parque Ibirapuera é um parque urbano localizado na cidade de São Paulo, Brasil. Em 2017, foi o parque mais visitado da América Latina, com aproximadamente 14 milhões de visitas,[1] além de ser um dos locais mais fotografados do mundo</td>
+      </tr>
+      <tr class="sao-paulo">
+        <td>Catedral Metropolitana da Sé</td>
+        <td>Catedral Metropolitana Nossa Senhora da Assunção e São Paulo, informalmente conhecida como Catedral da Sé, é o principal templo católico da cidade de São Paulo, Brasil. Localiza-se na Praça da Sé, na Zona Central do município. Desde 2007 o arcebispo metropolitano da Arquidiocese é o cardeal Odilo Pedro Scherer.</td>
+      </tr>
+      <tr class="sao-paulo">
+        <td class="divisao-td">Mercado Municipal</td>
+        <td class="divisao-td">Mercado Municipal Paulistano, também conhecido como Mercadão, é um importante mercado público localizado no Centro Histórico da cidade de São Paulo. Localiza-se em uma área próxima ao rio Tamanduateí, no bairro Mercado, antiga Várzea do Carmo, entre as ruas Cantareira, Comendador Assad Abdalla e as avenidas Mercúrio e do Estado.</td>
+      </tr>
+      <tr class="curitiba">
+      <td rowspan="4" class="divisao-td">Curitiba</td>
+        <td>Museu Oscar Niemeyer</td>
+        <td>O espaço foi inaugurado no dia 22 de novembro de 2002 com o nome de Novo Museu, com a conclusão do anexo foi reinaugurado em 8 de Julho de 2003, recebendo a atual denominação.</td>
+      </tr>
+      <tr class="curitiba">
+        <td>Jardim Botânico de Curitiba</td>
+        <td>O Jardim Botânico de Curitiba, ou Jardim Botânico Francisca Rischbieter, é um dos principais pontos turísticos da cidade de Curitiba, capital do estado brasileiro do Paraná. Localiza-se no bairro Jardim Botânico. Em 2007 foi o monumento mais votado numa eleição para escolha das Sete Maravilhas do Brasil, promovido pelo site Mapa-Mundi.</td>
+      </tr>
+      <tr class="curitiba">
+        <td>Parque Barigui</td>
+        <td>Além de ser um refúgio de biodiversidade, o Parque Barigui é muito popular entre os moradores e turistas que buscam lazer ao ar livre e atividades esportivas. O local oferece espaços para caminhadas, corridas, ciclismo e patinação, além de áreas para piqueniques e encontros familiares. Com uma infraestrutura que inclui quiosques, academias ao ar livre e espaços culturais, o parque promove a integração entre a natureza e a vida urbana, proporcionando um ambiente ideal para relaxamento e convivência em meio à movimentada cidade de Curitiba.</td>
+      </tr>
+      <tr class="curitiba">
+        <td class="divisao-td">Bosque Alemão</td>
+        <td class="divisao-td">O Bosque Alemão, antiga chácara da família Schaffer com 38 mil m² de área, foi inaugurado em 1996 na cidade de Curitiba, capital do estado brasileiro do Paraná. Localiza-se no bairro Vista Alegre (Jardim Schaffer) e é formado por mata nativa densa. Foi criado para homenagear a cultura e as tradições que os imigrantes alemães trouxeram para Curitiba a partir de 1833.</td>
+      </tr>
+    </table>
+  </body>
+</html> 

@@ -1,0 +1,21 @@
+
+/* Visualização em desktop ou notebook */
+body {
+  background-color: red;
+}
+
+
+/* Visualização em smartphone */
+@media (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+  
+}
+
+/* Visualização em tablet */
+@media (min-width: 601px) and (max-width: 1024px){
+  body {
+    background-color: green;
+  }
+}
