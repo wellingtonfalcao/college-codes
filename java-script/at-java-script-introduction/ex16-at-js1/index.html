@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculadora de Diferença entre Datas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="formulario">
+    <h1>Calculadora Datas</h1>
+    <label>Data Inicial</label><br />
+    <input type="date" id="dataInicial" /><br />
+    <span id="erroDataInicial"></span><br />
+
+    <label>Data Final</label><br />
+    <input type="date" id="dataFinal" /><br />
+    <span id="erroDataFinal"></span><br />
+
+    <button type="submit" title="Fazer cálculo das datas" onclick="calcular()">Calcular</button><br />
+    <span id="resultado" class="resultado"></span><br /> 
+    <div> 
+  </body>
+</html>
