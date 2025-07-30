@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projetos\\c#\\tp3_wellington_falcao_csharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99D7DD6A-FCED-494A-9E08-3693E492148A}|exercicio12\\exercicio12.csproj|e:\\projetos\\c#\\tp3_wellington_falcao_csharp\\exercicio12\\esfera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99D7DD6A-FCED-494A-9E08-3693E492148A}|exercicio12\\exercicio12.csproj|solutionrelative:exercicio12\\esfera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99D7DD6A-FCED-494A-9E08-3693E492148A}|exercicio12\\exercicio12.csproj|e:\\projetos\\c#\\tp3_wellington_falcao_csharp\\exercicio12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99D7DD6A-FCED-494A-9E08-3693E492148A}|exercicio12\\exercicio12.csproj|solutionrelative:exercicio12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55E5A2E-472E-4B70-867F-69B12D29F5FF}|exercicio11\\exercicio11.csproj|e:\\projetos\\c#\\tp3_wellington_falcao_csharp\\exercicio11\\circulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55E5A2E-472E-4B70-867F-69B12D29F5FF}|exercicio11\\exercicio11.csproj|solutionrelative:exercicio11\\circulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Circulo.cs",
+              "DocumentMoniker": "E:\\Projetos\\c#\\tp3_wellington_falcao_csharp\\exercicio11\\Circulo.cs",
+              "RelativeDocumentMoniker": "exercicio11\\Circulo.cs",
+              "ToolTip": "E:\\Projetos\\c#\\tp3_wellington_falcao_csharp\\exercicio11\\Circulo.cs",
+              "RelativeToolTip": "exercicio11\\Circulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T19:52:33.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Projetos\\c#\\tp3_wellington_falcao_csharp\\exercicio12\\Program.cs",
+              "RelativeDocumentMoniker": "exercicio12\\Program.cs",
+              "ToolTip": "E:\\Projetos\\c#\\tp3_wellington_falcao_csharp\\exercicio12\\Program.cs",
+              "RelativeToolTip": "exercicio12\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T19:47:20.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Esfera.cs",
+              "DocumentMoniker": "E:\\Projetos\\c#\\tp3_wellington_falcao_csharp\\exercicio12\\Esfera.cs",
+              "RelativeDocumentMoniker": "exercicio12\\Esfera.cs",
+              "ToolTip": "E:\\Projetos\\c#\\tp3_wellington_falcao_csharp\\exercicio12\\Esfera.cs",
+              "RelativeToolTip": "exercicio12\\Esfera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T19:44:21.983Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
