@@ -1,0 +1,169 @@
+/* Crie uma página completa em HTML, usando CSS externo, com um tema real a sua escolha e com as seguintes características:
+
+Página com cor de fundo cinza claro;
+Largura da centralizante 1200px e altura que for necessária para o conteúdo;
+Div centralizante com sombra e margem interna de 10px e fundo branco;
+Header com margem interna de 10px e cor de fundo;
+Logo à direita (canto superior direito em relação a tela) dentro do header e um título principal centralizado; 
+Menu com seis itens diferentes com links cegos e com mudança de cor de texto ao passar do mouse;
+Três seções diferentes, com uma linha e duas colunas cada;
+Na primeira coluna uma foto com uma legenda, e um link fictício que abra em uma outra guia do navegador.
+Na segunda coluna um texto relativo à foto usada na outra coluna, com título, parágrafo, 
+e em uma parte qualquer do texto pelo menos um link cego.
+Uma linha simples separando as seções com espaçamento de 5px.
+Rodapé com Copyright simples, centralizado e linkado para email.
+Use: 
+
+a a:visited a:hover;
+background;
+border;
+body;
+header;
+main;
+h1, h2;
+section;
+article;
+p;
+footer;
+padding;
+hr.
+Obs: Você pode desconsiderar quaisquer dessas configurações especificadas, se preferir 
+apresentar uma página com as mesmas características visuais, respeitando o código que é pedido.  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+p {
+  line-height: 1.4rem;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  padding: 30px 0;
+  text-align: center;
+  float: both;
+}
+
+h2 {
+  padding-bottom: 10px;
+}
+
+section img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+figcaption {
+  text-align: center;
+}
+
+figure a {
+    text-decoration: none;
+    color: #212b49;
+}
+
+figure a:visited {
+    text-decoration: none;
+    color: #212b49;
+}
+
+figure a:hover {
+    text-decoration: underline;
+}
+
+hr {
+  margin: 5px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 4px #f1f1f1;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #a9b1c9;
+}
+
+header h1 {
+  padding: 30px 0;
+  text-align: center;
+  float: both;
+}
+
+.logo {
+  width: 100%;
+  text-align: right;
+  font-size: 32px;
+}
+
+nav {
+  margin-top: 10px;
+  float: center;
+  text-align: center;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-right: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #212b49;
+  font-weight: bold;
+}
+
+nav a:visited {
+  color: #212b49;
+}
+
+nav a:hover {
+  color: #485274;
+}
+
+.titulo-principal {
+  padding: 30px 0;
+}
+
+section {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 20px;
+  gap: 20px;
+  overflow-wrap: break-word; 
+}
+
+section {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 20px;
+    gap: 20px;
+    overflow-wrap: break-word; 
+  }
+
+footer {
+  text-align: center;
+  padding: 10px;
+}

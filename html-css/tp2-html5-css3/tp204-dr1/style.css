@@ -1,0 +1,17 @@
+/* Crie um arquivo HTML, usando CSS. Nele insira três imagens diferentes 
+  com 1200px x 400px, com espaçamento entre elas de 25px, usando a tag semântica para 
+  essas imagens. Nelas, coloque um texto grande, em alguma parte, respeitando obviamente o 
+  contraste, com transparência. Use figcaption e RGBa. Não esqueça de colocar no código das imagens os 
+  comandos de acessibilidade e indexação. */
+
+figcaption {
+  max-width: 100%;
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 25px;
+  background-color: rgb(0, 0, 0, 0.6);
+  position: relative;
+  bottom: 60px;
+  display: inline-block;
+  padding: 0 20px;
+}

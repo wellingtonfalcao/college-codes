@@ -1,0 +1,11 @@
+.container {
+  width: 1000px;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+}
+
+.caixa {
+  width: 180px;
+  height: 200px;
+  background-color: rgb(206, 206, 206);

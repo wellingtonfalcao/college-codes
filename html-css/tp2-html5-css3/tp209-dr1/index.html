@@ -1,0 +1,116 @@
+<!--
+Crie três quadrados idênticos, usando class, com css incorporado, com bordas arredondadas, 
+cor de fundo, sombra, e margem interna.
+
+Dentro deles coloque blocos de texto, com um título centralizado, um parágrafo 
+com alinhamento justificado, e um link “cego” sem sublinhado alinhado à 
+direita escrito “leia mais”, em vermelho.
+
+Observações:
+
+Fonte geneva cor black tamanho 12px.
+Títulos Fonte Arial cor verde escuro.
+Parágrafos com recuo da primeira linha com 30px e alinhamento de texto justificado.
+Margem de 10px nos blocos de texto.
+Cor de fundo a seu critério usando RGBa
+Tamanho das caixas 30% com afastamento á seu critério
+Use:
+
+h2;
+p;
+background-color;
+border-radius;
+float;
+box-shadow;
+padding;
+width e height
+
+ -->
+
+<!-- OBS: No enunciado foi solicitado 3 Quadrados, só consegui reproduzir retangulos com estas regras -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arquivo padrão</title>
+    <style>
+      main {
+        height: ;
+      }
+      .quadrado {
+        float: left;
+        width: 30%;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: rgba(145, 110, 35, 0.5);
+        box-shadow: 2px 2px 2px rgb(188, 188, 188);
+        text-align: right;
+        font-size: 12px;
+      }
+
+      .quadrado p {
+        padding-top: 30px;
+        text-align: justify;
+        font-family: Geneva;
+      }
+
+      .quadrado h2 {
+        text-align: center;
+        font-family: Arial;
+        color: rgb(19, 52, 10);
+      }
+
+      .quadrado a {
+        text-decoration: none;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="quadrado">
+        <h2>Título do primeiro bloco</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages.
+        </p>
+        <a href="#">Leia mais</a>
+      </section>
+      <section class="quadrado">
+        <h2>Título do segundo bloco</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages.
+        </p>
+        <a href="#">Leia mais</a>
+      </section>
+      <section class="quadrado">
+        <h2>Título do terceiro bloco</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages.
+        </p>
+        <a href="#">Leia mais</a>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

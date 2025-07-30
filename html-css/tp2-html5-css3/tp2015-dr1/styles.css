@@ -1,0 +1,65 @@
+header {
+  width: 851px;
+  height: 315px;
+  margin-bottom: 20px;
+}
+
+header img {
+  height: 305px;
+  border-radius: 0 20px 20px 0;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+/* HEADER 1 */
+
+.header-1 {
+  background-image: url("img/carl-sagan-bg.jpg");
+  transition: background-image 1s;
+}
+
+.header-1:hover {
+  background-image: url("img/aloisio-magalhaes-bg.jpg");
+}
+
+/* HEADER 2 */
+.header-2 {
+  background-image: url("img/ada-lovelace-bg.jpg");
+  transition: background-image 1s;
+}
+
+.header-2:hover {
+  background-image: url("img/grace-hopper-bg.jpg");
+}
+
+/* HEADER 3 */
+.header-3 {
+  background-image: url("img/alan-turing-bg.jpg");
+  transition: background-image 1s;
+}
+
+.header-3:hover {
+  background-image: url("img/ada-lovelace-bg.jpg");
+}
+
+/* HEADER 4 */
+
+.header-4 {
+  background-image: url("img/grace-hopper-bg.jpg");
+  transition: background-image 1s;
+}
+
+.header-4:hover {
+  background-image: url("img/ada-lovelace-bg.jpg");
+}
+
+/* HEADER 5 */
+
+.header-5 {
+  background-image: url("img/aloisio-magalhaes-bg.jpg");
+  transition: background-image 1s;
+}
+
+.header-5:hover {
+  background-image: url("img/ada-lovelace-bg.jpg");
+}

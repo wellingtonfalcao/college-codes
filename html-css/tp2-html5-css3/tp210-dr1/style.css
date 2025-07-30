@@ -1,0 +1,60 @@
+/* //   Crie um menu centralizado na página, com formato retangular, contendo cinco links,
+//   cada um com uma palavra diferente. Configure o texto dos links em negrito, sem sublinhado,
+//   e com a mesma cor de fundo em cada item. Adicione bordas ao redor dos itens e ajuste para que,
+//   ao passar o mouse, o fundo de cada link mude de cor. As etapas dos links (normal e visitado)
+//   devem manter a mesma formatação. Escolha uma cor de fundo para a página que tenha pouco contraste
+//   em relação à cor do menu, garantindo uma estética harmoniosa.
+
+// Use:
+
+// Tamanho: 1000px x 30px;
+// a;
+// a:visited;
+// a:hover;
+// background-color;
+// border;
+// body. --> */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(185, 185, 185);
+}
+
+nav {
+    max-width: 1000px;
+    min-height: 30px;
+    margin: 0 auto !important;
+    background-color: rgb(71, 71, 152);
+    font-family: 'Segoe UI', Tahoma;
+    font-size: 12px;
+    text-align: center;
+    
+    
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: rgb(71, 71, 152);
+    border: 1px solid rgb(84, 84, 128);
+    padding: 5px 10px
+}
+
+    nav ul li:hover {
+        background-color: rgb(60, 60, 140);
+    }
+
+nav li a {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+    nav li a:visited {
+        color: white;
+    }

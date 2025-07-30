@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li:first-child a:hover {
+  color: rgb(40, 40, 174);
+}
+
+li:nth-child(3) a:hover,
+li:nth-child(5) a:hover {
+  color: red;
+  font-weight: bold;
+}
+
+li:last-child a:hover {
+  font-style: italic;
+}

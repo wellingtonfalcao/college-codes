@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --cor-fundo: #449ebe;
+  --cor-primaria: #216780;
+  --cor-secundaria: #596164;
+  --cor-erro: #df4623;
+  --font-p: 0.9rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--cor-fundo);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.erro {
+  color: var(--cor-erro);
+  font-size: var(--font-p);
+}
+
+.formulario {
+  width: 400px;
+  padding: 32px;
+  background-color: rgb(240, 248, 255, 0.6);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; 
+}
+
+form label {
+  font-size: 0.9rem;
+  color: var(--cor-primaria);
+}
+
+h2 {
+  color: var(--cor-primaria);
+}
+
+#nome, #email {
+  outline: none;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  width: 100%;
+  height: 2.5rem;
+  border: 2px solid #88bbce;
+  border-radius: 3px;
+  
+}
+
+#mensagem {
+  outline: none;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  width: 100%;
+  height: 100px;
+  border: 2px solid #88bbce;
+  resize: none;
+  
+}
+
+#enviar {
+  cursor: pointer;
+  background-color: var(--cor-primaria);
+  border-radius: 5px;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+#enviar:hover {
+  background-color: var(--cor-fundo);
+}
+
+#nome:focus, #email:focus, #mensagem:focus {
+  outline: none !important;
+  border: 2px solid var(--cor-secundaria);
+}

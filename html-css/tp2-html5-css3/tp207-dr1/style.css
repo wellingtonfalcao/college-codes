@@ -1,0 +1,20 @@
+/* Crie um arquivo HTML, usando CSS externo, e nele crie um retângulo de 500px x 200px, 
+  com sombra a seu gosto, cantos arredondados, e cor de fundo contrastando com a cor do texto de uma lista de 5 itens quaisquer, 
+  com fonte externa puxada do google fonts. Separe as regras usando ID´s e classes, 
+  usando uma para formatação e posicionamento e outro para layout. */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+.formatacao {
+  width: 500px;
+  height: 200px;
+  background-color: rgb(50, 50, 95);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+#layout {
+  font-family: "Roboto", sans-serif;
+  color: rgb(205, 205, 205);
+}
