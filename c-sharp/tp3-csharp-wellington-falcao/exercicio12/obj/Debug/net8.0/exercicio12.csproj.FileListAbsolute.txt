@@ -1,0 +1,14 @@
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\bin\Debug\net8.0\exercicio12.exe
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\bin\Debug\net8.0\exercicio12.deps.json
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\bin\Debug\net8.0\exercicio12.runtimeconfig.json
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\bin\Debug\net8.0\exercicio12.dll
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\bin\Debug\net8.0\exercicio12.pdb
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\obj\Debug\net8.0\exercicio12.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\obj\Debug\net8.0\exercicio12.AssemblyInfoInputs.cache
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\obj\Debug\net8.0\exercicio12.AssemblyInfo.cs
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\obj\Debug\net8.0\exercicio12.csproj.CoreCompileInputs.cache
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\obj\Debug\net8.0\exercicio12.dll
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\obj\Debug\net8.0\refint\exercicio12.dll
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\obj\Debug\net8.0\exercicio12.pdb
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\obj\Debug\net8.0\exercicio12.genruntimeconfig.cache
+E:\Projetos\c#\tp3_wellington_falcao_csharp\exercicio12\obj\Debug\net8.0\ref\exercicio12.dll

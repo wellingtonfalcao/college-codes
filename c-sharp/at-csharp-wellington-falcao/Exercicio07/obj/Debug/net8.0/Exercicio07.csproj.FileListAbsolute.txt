@@ -1,0 +1,14 @@
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\bin\Debug\net8.0\Exercicio07.exe
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\bin\Debug\net8.0\Exercicio07.deps.json
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\bin\Debug\net8.0\Exercicio07.runtimeconfig.json
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\bin\Debug\net8.0\Exercicio07.dll
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\bin\Debug\net8.0\Exercicio07.pdb
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\obj\Debug\net8.0\Exercicio07.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\obj\Debug\net8.0\Exercicio07.AssemblyInfoInputs.cache
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\obj\Debug\net8.0\Exercicio07.AssemblyInfo.cs
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\obj\Debug\net8.0\Exercicio07.csproj.CoreCompileInputs.cache
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\obj\Debug\net8.0\Exercicio07.dll
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\obj\Debug\net8.0\refint\Exercicio07.dll
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\obj\Debug\net8.0\Exercicio07.pdb
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\obj\Debug\net8.0\Exercicio07.genruntimeconfig.cache
+E:\Projetos\c#\wellington_falcao_dr2-at\Exercicio07\obj\Debug\net8.0\ref\Exercicio07.dll

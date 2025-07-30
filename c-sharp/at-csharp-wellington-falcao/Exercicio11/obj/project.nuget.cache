@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "4NeAOX2eLjc=",
+  "success": false,
+  "projectFilePath": "E:\\Repositórios\\college-codes\\c-sharp\\at-csharp-wellington-falcao\\Exercicio11\\Exercicio11.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'E:\\Repositórios\\college-codes\\c-sharp\\at-csharp-wellington-falcao\\Exericicio10\\Exercicio10.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "E:\\Repositórios\\college-codes\\c-sharp\\at-csharp-wellington-falcao\\Exericicio10\\Exercicio10.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
