@@ -1,0 +1,229 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1E5C7A1-056F-46C4-8193-73DFA3F7CF94}|Delegate7b\\Delegate7b.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\delegate7b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1E5C7A1-056F-46C4-8193-73DFA3F7CF94}|Delegate7b\\Delegate7b.csproj|solutionrelative:delegate7b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1E5C7A1-056F-46C4-8193-73DFA3F7CF94}|Delegate7b\\Delegate7b.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\delegate7b\\calcula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1E5C7A1-056F-46C4-8193-73DFA3F7CF94}|Delegate7b\\Delegate7b.csproj|solutionrelative:delegate7b\\calcula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D752DF38-1BB3-48BB-9401-EC4FC5C31F3A}|Delegate\\Delegate1.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\delegate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D752DF38-1BB3-48BB-9401-EC4FC5C31F3A}|Delegate\\Delegate1.csproj|solutionrelative:delegate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACAA79A0-0AE7-4E2A-A7CD-8C37DED4C7A2}|Delegate6b\\Delegate6b.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\delegate6b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACAA79A0-0AE7-4E2A-A7CD-8C37DED4C7A2}|Delegate6b\\Delegate6b.csproj|solutionrelative:delegate6b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95952D5-DC11-49DF-974A-6F29282BD606}|Delegate3\\Delegate3.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\delegate3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95952D5-DC11-49DF-974A-6F29282BD606}|Delegate3\\Delegate3.csproj|solutionrelative:delegate3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13695DE9-FFC8-4DF7-9DFA-56B4E9860D33}|Delegate5\\Delegate5.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\delegate5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13695DE9-FFC8-4DF7-9DFA-56B4E9860D33}|Delegate5\\Delegate5.csproj|solutionrelative:delegate5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5332105-B747-4447-BDEF-12A4C71F74B7}|Lambda1\\Lambda1.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\lambda1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5332105-B747-4447-BDEF-12A4C71F74B7}|Lambda1\\Lambda1.csproj|solutionrelative:lambda1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3211960D-D032-4202-B9A0-2A0883769281}|Delegate4\\Delegate4.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\delegate4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3211960D-D032-4202-B9A0-2A0883769281}|Delegate4\\Delegate4.csproj|solutionrelative:delegate4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533A8CE5-7C43-4EBE-81CB-BAF65DB214C3}|Delagate2\\Delegate2.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\delagate2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533A8CE5-7C43-4EBE-81CB-BAF65DB214C3}|Delagate2\\Delegate2.csproj|solutionrelative:delagate2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6019A9BC-9E00-4132-B275-2D679988242F}|Lambda2\\Lambda2.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\lambda2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6019A9BC-9E00-4132-B275-2D679988242F}|Lambda2\\Lambda2.csproj|solutionrelative:lambda2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5332105-B747-4447-BDEF-12A4C71F74B7}|Lambda1\\Lambda1.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\lambda1\\models\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5332105-B747-4447-BDEF-12A4C71F74B7}|Lambda1\\Lambda1.csproj|solutionrelative:lambda1\\models\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23880C7E-2FE3-435E-8284-15E6E9E6BA1D}|Deelegate7a\\Delegate7a.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\deelegate7a\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23880C7E-2FE3-435E-8284-15E6E9E6BA1D}|Deelegate7a\\Delegate7a.csproj|solutionrelative:deelegate7a\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07DC0692-A0C3-475D-B8E8-E3709DFA5D49}|Delegate6\\Delegate6a.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\delegate6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07DC0692-A0C3-475D-B8E8-E3709DFA5D49}|Delegate6\\Delegate6a.csproj|solutionrelative:delegate6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Calcula.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate7b\\Calcula.cs",
+              "RelativeDocumentMoniker": "Delegate7b\\Calcula.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate7b\\Calcula.cs",
+              "RelativeToolTip": "Delegate7b\\Calcula.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T00:58:47.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate7b\\Program.cs",
+              "RelativeDocumentMoniker": "Delegate7b\\Program.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate7b\\Program.cs",
+              "RelativeToolTip": "Delegate7b\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T00:57:33.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Deelegate7a\\Program.cs",
+              "RelativeDocumentMoniker": "Deelegate7a\\Program.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Deelegate7a\\Program.cs",
+              "RelativeToolTip": "Deelegate7a\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAQwAwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T00:44:49.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate6b\\Program.cs",
+              "RelativeDocumentMoniker": "Delegate6b\\Program.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate6b\\Program.cs",
+              "RelativeToolTip": "Delegate6b\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T00:17:15.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate6\\Program.cs",
+              "RelativeDocumentMoniker": "Delegate6\\Program.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate6\\Program.cs",
+              "RelativeToolTip": "Delegate6\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T00:03:37.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate5\\Program.cs",
+              "RelativeDocumentMoniker": "Delegate5\\Program.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate5\\Program.cs",
+              "RelativeToolTip": "Delegate5\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T23:53:55.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate4\\Program.cs",
+              "RelativeDocumentMoniker": "Delegate4\\Program.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate4\\Program.cs",
+              "RelativeToolTip": "Delegate4\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T23:41:56.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Lambda2\\Program.cs",
+              "RelativeDocumentMoniker": "Lambda2\\Program.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Lambda2\\Program.cs",
+              "RelativeToolTip": "Lambda2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T00:46:03.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate\\Program.cs",
+              "RelativeDocumentMoniker": "Delegate\\Program.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate\\Program.cs",
+              "RelativeToolTip": "Delegate\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwCAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T23:38:36.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Conta.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Lambda1\\Models\\Conta.cs",
+              "RelativeDocumentMoniker": "Lambda1\\Models\\Conta.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Lambda1\\Models\\Conta.cs",
+              "RelativeToolTip": "Lambda1\\Models\\Conta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T00:14:03.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Lambda1\\Program.cs",
+              "RelativeDocumentMoniker": "Lambda1\\Program.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Lambda1\\Program.cs",
+              "RelativeToolTip": "Lambda1\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T00:10:04.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate3\\Program.cs",
+              "RelativeDocumentMoniker": "Delegate3\\Program.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delegate3\\Program.cs",
+              "RelativeToolTip": "Delegate3\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T00:00:26.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delagate2\\Program.cs",
+              "RelativeDocumentMoniker": "Delagate2\\Program.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\delegate\\Delagate2\\Program.cs",
+              "RelativeToolTip": "Delagate2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T23:50:34.285Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
