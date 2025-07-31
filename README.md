@@ -12,6 +12,7 @@
 - [`/java`](https://github.com/wellingtonfalcao/college-codes/tree/main/java) – Atividades e projetos em Java
 - [`/java-script`](https://github.com/wellingtonfalcao/college-codes/tree/main/java-script) – Códigos em JavaScript
 - [`/html-css`](https://github.com/wellingtonfalcao/college-codes/tree/main/html-css) – Trabalhos com HTML e CSS
+- [`/machine-learning`](https://github.com/wellingtonfalcao/college-codes/tree/main/machine-learning) – Trabalhos com HTML e CSS
 
 ---
 
