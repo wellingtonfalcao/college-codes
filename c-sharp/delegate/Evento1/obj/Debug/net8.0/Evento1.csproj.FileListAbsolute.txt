@@ -1,0 +1,15 @@
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\obj\Debug\net8.0\Evento1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\obj\Debug\net8.0\Evento1.AssemblyInfoInputs.cache
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\obj\Debug\net8.0\Evento1.AssemblyInfo.cs
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\obj\Debug\net8.0\Evento1.csproj.CoreCompileInputs.cache
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\obj\Debug\net8.0\Evento1.sourcelink.json
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\bin\Debug\net8.0\Evento1.exe
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\bin\Debug\net8.0\Evento1.deps.json
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\bin\Debug\net8.0\Evento1.runtimeconfig.json
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\bin\Debug\net8.0\Evento1.dll
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\bin\Debug\net8.0\Evento1.pdb
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\obj\Debug\net8.0\Evento1.dll
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\obj\Debug\net8.0\refint\Evento1.dll
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\obj\Debug\net8.0\Evento1.pdb
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\obj\Debug\net8.0\Evento1.genruntimeconfig.cache
+E:\Repositórios\college-codes\c-sharp\delegate\Evento1\obj\Debug\net8.0\ref\Evento1.dll
