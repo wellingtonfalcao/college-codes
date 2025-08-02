@@ -30,7 +30,7 @@ public class VendedorTest {
     @Test
     void deveCalcularSalarioComBonus_QuandoVendedorAtivo_EntaoRetornaSalarioComBonus() {
         // Dado
-        Vendedor vendedor = new Vendedor("Elberth", 123, 1000, true);
+        Vendedor vendedor = new Vendedor("Wellington", 123, 1000, true);
         double bonus = 500;
         double salarioCalculado = 1500;
 
@@ -44,7 +44,7 @@ public class VendedorTest {
 
     @Test
     void retornarZeroParaSalarioVendedorInativo() {
-        Vendedor vendedor = new Vendedor("Elberth", 123, 1000, false);
+        Vendedor vendedor = new Vendedor("Wellington", 123, 1000, false);
 
         double novoSalario = vendedor.calcularSalario(500);
 
