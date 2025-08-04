@@ -16,7 +16,7 @@ Contexto: Sob a supervisão do professor do Projeto de Bloco, os alunos enfrenta
 
 Este projeto está inserido no contexto do método RUP (Rational Unified Process) de desenvolvimento, e entramos na fase de Elaboração.
 
-###Diretrizes:
+### Diretrizes:
 
 Identificação de Classes e Matriz de Associação: A partir do estudo de caso apresentado na última entrega, os alunos deverão elaborar uma lista de classes candidatas. Esta etapa tem como foco a análise das entidades presentes nos casos de uso, fundamentais para a estruturação do projeto.
 Preparação de um Dicionário de Dados: Para complementar o projeto, será necessário preparar um dicionário de dados que inclua definições de todas as classes, atributos e associações identificados. Este documento servirá como uma referência fundamental para a compreensão e implementação do sistema.
@@ -25,7 +25,7 @@ Conforme abordado em nossas aulas, na fase de Elaboração é esperado que os al
 Implementação: Como parte da aplicação prática dos conceitos aprendidos, os alunos iniciarão a implementação de um software de leitura e escrita de arquivos CSV. Este software será baseado nos dados que serão utilizados no projeto, servindo como o primeiro passo concreto na implementação do sistema modelado.
 ATENÇÃO: Aqui temos uma escolha a ser feita. Devemos optar por desenvolver a solução em Java ou C#/ASP.NET. Se a tecnologia escolhida for Java, você desenvolverá até o final do projeto uma interface de linha de comando que interage com um back-end por meio de uma API REST. Já se você escolher C#/ASP.NET, a solução será desenvolvida usando Razor Pages (interface e back-end).
 
-###Entrega do Projeto:
+### Entrega do Projeto:
 
 A entrega final deve incluir todos os documentos e artefatos gerados durante o projeto, seguindo as diretrizes acima. Os alunos são encorajados a aplicar criatividade e pensamento crítico ao longo do desenvolvimento do projeto, visando a criação de um sistema que não apenas atenda aos requisitos técnicos, mas também ofereça uma experiência significativa e valiosa aos usuários finais.
 
