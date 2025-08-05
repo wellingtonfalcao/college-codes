@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Minha página";
+    string nome = "Wellington";
+    string mensagem;
+
+    if (DateTime.Now.Hour < 12)
+    {
+        mensagem = "Bom dia";
+    }
+    else if (DateTime.Now.Hour < 18)
+    {
+        mensagem = "Boa tarde";
+    }
+    else
+    {
+        mensagem = "Boa noite";
+    }
+}
+
+<div class="text-center">
+    <h1 class="display-4">@mensagem, @nome<h1>
+            <p>Seja-bem vindo</p>
+</div>
