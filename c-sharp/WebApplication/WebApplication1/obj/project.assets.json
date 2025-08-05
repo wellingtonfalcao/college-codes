@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projetos\\c#\\class-content\\WebApplication\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "E:\\Repositórios\\college-codes\\c-sharp\\WebApplication\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "E:\\Projetos\\c#\\class-content\\WebApplication\\WebApplication1\\WebApplication1.csproj",
+      "projectPath": "E:\\Repositórios\\college-codes\\c-sharp\\WebApplication\\WebApplication1\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\Wellington\\.nuget\\packages\\",
-      "outputPath": "E:\\Projetos\\c#\\class-content\\WebApplication\\WebApplication1\\obj\\",
+      "outputPath": "E:\\Repositórios\\college-codes\\c-sharp\\WebApplication\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

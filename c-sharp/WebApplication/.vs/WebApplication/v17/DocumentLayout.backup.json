@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Projetos\\c#\\class-content\\WebApplication\\",
+  "WorkspaceRootPath": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90F817EA-1C8B-491B-8511-F2C313C8E992}|WebApplication1\\WebApplication1.csproj|e:\\projetos\\c#\\class-content\\webapplication\\webapplication1\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{90F817EA-1C8B-491B-8511-F2C313C8E992}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{90F817EA-1C8B-491B-8511-F2C313C8E992}|WebApplication1\\WebApplication1.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\webapplication\\webapplication1\\pages\\index3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{90F817EA-1C8B-491B-8511-F2C313C8E992}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\index3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F817EA-1C8B-491B-8511-F2C313C8E992}|WebApplication1\\WebApplication1.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\webapplication\\webapplication1\\pages\\index3.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F817EA-1C8B-491B-8511-F2C313C8E992}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\index3.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F817EA-1C8B-491B-8511-F2C313C8E992}|WebApplication1\\WebApplication1.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\webapplication\\webapplication1\\models\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F817EA-1C8B-491B-8511-F2C313C8E992}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Conta.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\WebApplication1\\Models\\Conta.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Conta.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\WebApplication1\\Models\\Conta.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Conta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T15:07:17.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index3.cshtml.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\WebApplication1\\Pages\\Index3.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Index3.cshtml.cs",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\WebApplication1\\Pages\\Index3.cshtml.cs",
+              "RelativeToolTip": "WebApplication1\\Pages\\Index3.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T15:04:57.568Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Projetos\\c#\\class-content\\WebApplication\\WebApplication1\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Index.cshtml",
-              "ToolTip": "E:\\Projetos\\c#\\class-content\\WebApplication\\WebApplication1\\Pages\\Index.cshtml",
-              "RelativeToolTip": "WebApplication1\\Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Title": "Index3.cshtml",
+              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\WebApplication1\\Pages\\Index3.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Index3.cshtml",
+              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\WebApplication1\\Pages\\Index3.cshtml",
+              "RelativeToolTip": "WebApplication1\\Pages\\Index3.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-05T13:16:05.277Z",
+              "WhenOpened": "2025-08-05T15:04:52.979Z",
               "EditorCaption": ""
             }
           ]
