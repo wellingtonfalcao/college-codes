@@ -4,18 +4,19 @@
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public double saldo { get; set; }
+        public double Saldo { get; set; }
 
+        public Conta() { }
         public Conta(int id, string nome, double saldo)
         {
             Id = id;
             Nome = nome;
-            this.saldo = saldo;
+            Saldo = saldo;
         }
 
         public override string ToString()
         {
-            return $"Id: {Id}, Nome: {Nome}, Saldo: {saldo}";
+            return $"Id: {Id}, Nome: {Nome}, Saldo: {Saldo}";
         }
     }
 }

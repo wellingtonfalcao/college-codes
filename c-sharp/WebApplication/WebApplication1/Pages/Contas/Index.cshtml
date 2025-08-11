@@ -1,0 +1,29 @@
+﻿@page "/"
+@model WebApplication1.Pages.Contas.IndexModel
+@{
+    ViewData["Title"] = "Banco";
+}
+
+<h1>Banco</h1>
+
+<p><a asp-page="Create">Criar conta</a></p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Saldo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var conta in Model.Contas)
+        {
+            <tr>
+                <td>@conta.Id</td>
+                <td>@conta.Nome</td>
+                <td>@conta.Saldo</td>
+            </tr>
+        }
+    </tbody>
+</table>
