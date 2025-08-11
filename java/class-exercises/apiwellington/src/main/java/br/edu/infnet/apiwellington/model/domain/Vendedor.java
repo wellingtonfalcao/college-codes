@@ -15,7 +15,11 @@ public class Vendedor {
 	}
 	
 	public double calcularSalario(double bonus) {
-
+		
+		if(bonus <= 0) {
+			throw new IllegalArgumentException("O valor não pode ser menor ou igual a zero!");
+		}
+		
 		return ativo ? salario + bonus : 0;
 	}
 }
