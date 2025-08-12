@@ -12,8 +12,9 @@ namespace WebApplication1.Pages.Contas
         public Conta Conta { get; set; }
 
         //Onpost é um método que lida com requisições HTTP POST.
-        public void OnPost(){
+        public IActionResult OnPost(){
             Console.WriteLine(Conta);
+            return RedirectToPage();
         }
     }
 }
