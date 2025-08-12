@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5F15DBF4-CAF0-4BFA-B8CA-9CC0D5BCF1B5}|WebApplication2\\WebApplication2.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\webapplication\\webapplication2\\pages\\create1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F15DBF4-CAF0-4BFA-B8CA-9CC0D5BCF1B5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\pages\\create1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F15DBF4-CAF0-4BFA-B8CA-9CC0D5BCF1B5}|WebApplication2\\WebApplication2.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\webapplication\\webapplication2\\pages\\create2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5F15DBF4-CAF0-4BFA-B8CA-9CC0D5BCF1B5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\pages\\create2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5F15DBF4-CAF0-4BFA-B8CA-9CC0D5BCF1B5}|WebApplication2\\WebApplication2.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\webapplication\\webapplication2\\pages\\create2.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F15DBF4-CAF0-4BFA-B8CA-9CC0D5BCF1B5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\pages\\create2.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F15DBF4-CAF0-4BFA-B8CA-9CC0D5BCF1B5}|WebApplication2\\WebApplication2.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\webapplication\\webapplication2\\pages\\create1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5F15DBF4-CAF0-4BFA-B8CA-9CC0D5BCF1B5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\pages\\create1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F15DBF4-CAF0-4BFA-B8CA-9CC0D5BCF1B5}|WebApplication2\\WebApplication2.csproj|e:\\reposit\u00F3rios\\college-codes\\c-sharp\\webapplication\\webapplication2\\pages\\create1.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Create1.cshtml",
               "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\WebApplication2\\Pages\\Create1.cshtml",
               "RelativeDocumentMoniker": "WebApplication2\\Pages\\Create1.cshtml",
               "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\WebApplication2\\Pages\\Create1.cshtml",
               "RelativeToolTip": "WebApplication2\\Pages\\Create1.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-11T23:48:30.905Z",
               "IsPinned": true,
@@ -48,7 +48,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Create2.cshtml.cs",
               "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\WebApplication2\\Pages\\Create2.cshtml.cs",
               "RelativeDocumentMoniker": "WebApplication2\\Pages\\Create2.cshtml.cs",
@@ -61,20 +61,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Create2.cshtml",
               "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\WebApplication2\\Pages\\Create2.cshtml",
               "RelativeDocumentMoniker": "WebApplication2\\Pages\\Create2.cshtml",
               "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\WebApplication2\\Pages\\Create2.cshtml",
               "RelativeToolTip": "WebApplication2\\Pages\\Create2.cshtml",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAkwCQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwCEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-12T00:32:47.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Conta.cs",
               "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\c-sharp\\WebApplication\\WebApplication2\\Models\\Conta.cs",
               "RelativeDocumentMoniker": "WebApplication2\\Models\\Conta.cs",
