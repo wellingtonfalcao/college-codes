@@ -1,110 +1,115 @@
-# Trabalho Prático – Testes Unitários com JUnit 5
+# TP1 – Testes Unitários com JUnit 5
 
-## 1. Configurando o ambiente de testes
+## Índice
+1. [Configurando o ambiente de testes](#1-configurando-o-ambiente-de-testes)
+2. [Escrevendo o primeiro teste](#2-escrevendo-o-primeiro-teste)
+3. [Aplicando as 4 fases de um teste](#3-aplicando-as-4-fases-de-um-teste)
+4. [Test Fixture com @BeforeEach](#4-test-fixture-com-beforeeach)
+5. [Testando um cenário de sucesso (Happy Path)](#5-testando-um-cenário-de-sucesso-happy-path)
+6. [Testando um cenário patológico (Corner Case)](#6-testando-um-cenário-patológico-corner-case)
+7. [Cenário de exceção (Divisão por zero)](#7-cenário-de-exceção-divisão-por-zero)
+8. [Combinando múltiplas entradas (log e seno)](#8-combinando-múltiplas-entradas-log-e-seno)
+9. [Priorizando testes com base na cobertura e comportamento](#9-priorizando-testes-com-base-na-cobertura-e-comportamento)
+10. [Nomeando testes de forma adequada](#10-nomeando-testes-de-forma-adequada)
+11. [Organizando os testes por comportamento](#11-organizando-os-testes-por-comportamento)
 
-- Crie um projeto Java na IDE **IntelliJ IDEA**.
-- Adicione corretamente a dependência do **JUnit 5** no `pom.xml` (para projetos Maven) ou `build.gradle` (para Gradle).
-- Configure o projeto para executar testes unitários.
-- **Tarefa:** Tire um print do ambiente configurado.
-
-**Print do ambiente configurado:**  
-![Print Ambiente Configurado](/img/captura-ambiente.png)
 ---
 
+## 1. Configurando o ambiente de testes
+- Criar projeto Java no IntelliJ IDEA.
+- Adicionar dependência do JUnit 5 no `pom.xml` (Maven) ou `build.gradle` (Gradle).
+- Configurar o projeto para executar testes unitários.
+
+**Tarefa:**  
+Tirar um print do ambiente configurado.
+
+📸 **Print do ambiente configurado:** *(inserir imagem aqui)*
+
+---
 
 ## 2. Escrevendo o primeiro teste
+- Implementar teste `testAddition` para verificar se o método `add` retorna corretamente a soma de dois números.
+- Executar o teste.
 
-- Implemente um teste chamado `testAddition` para verificar se o método `add` retorna corretamente a soma de dois números.
-- Execute o teste.
+**Respostas:**
+- **Painel de execução:** Exibe resultados dos testes (passou/falhou) com tempo de execução.
+- **Código do teste:** *(inserir código aqui)*
+- **Print do resultado:** *(inserir imagem aqui)*
+- **Significado dos ícones e mensagens:**
+  - ✔️ Verde: teste passou.
+  - ❌ Vermelho: teste falhou.
+  - Mensagens indicam qual teste foi executado e o resultado esperado/obtido.
 
-**Responda:**
-- O que aparece no painel de execução?
-- Mostre o código do teste.
-- Tire um print do resultado.
-- Escreva o que significam os ícones e mensagens exibidas.
-
-**Resposta:**
-
-Fiz o teste do método add() da classe ScientificCalculator. Criei uma classe no diretório de teste chamada ScientificCalculatorTest. 
-Nela fiz a annotation @Test para testar o método testeAddition(), criei uma instancia da classe ScientificaCalculator de nome calc.
-Chamei o metodo .add em seguida usei o assertEqual para comparar o valor esperado com o valor recebido. 
-
-Executei o teste e passou com sucesso pois o valor esperado era igual ao recebido.
-
-![Print Ambiente Configurado](/img/asser-equals.png)
+**Resumo:**  
+Fiz o teste do método `add()` da classe `ScientificCalculator`.  
+Na classe `ScientificCalculatorTest`, criei o método `testeAddition()` com `@Test`, instanciei `calc` e usei `assertEquals` para comparar o valor esperado com o obtido.  
+O teste passou com sucesso.
 
 ---
 
 ## 3. Aplicando as 4 fases de um teste
+Criar teste para o método `subtract` utilizando:
+- **Setup**
+- **Execution**
+- **Assertion**
+- **Teardown** (se aplicável)
 
-- Crie um teste para o método `subtract` utilizando:
-  1. **Setup**
-  2. **Execution**
-  3. **Assertion**
-  4. **Teardown** (se aplicável)
-- Comente no código onde cada fase está localizada.
-
-
----
-
-## 4. Test Fixture com `@BeforeEach`
-
-- Implemente um método anotado com `@BeforeEach` para instanciar o objeto `ScientificCalculator` antes de cada teste.
-- Mostre que o mesmo objeto é reaproveitado entre diferentes métodos de teste.
+No código, comentar onde cada fase está localizada.
 
 ---
 
-## 5. Testando um cenário de sucesso (*Happy Path*)
-
-- Implemente o teste `testSquareRootPositive` para verificar se o cálculo da raiz quadrada de um número positivo está correto.
-
----
-
-## 6. Testando um cenário patológico (*Corner Case*)
-
-- Implemente o teste `testSquareRootNegative` para verificar se o método `squareRoot` lança uma exceção ao receber um número negativo.
-- Utilize `assertThrows`.
+## 4. Test Fixture com @BeforeEach
+- Implementar método anotado com `@BeforeEach` para instanciar `ScientificCalculator` antes de cada teste.
+- Mostrar que o mesmo objeto é reaproveitado entre diferentes métodos de teste.
 
 ---
 
-## 7. Cenário de exceção (divisão por zero)
+## 5. Testando um cenário de sucesso (Happy Path)
+Implementar `testSquareRootPositive` para verificar se o cálculo da raiz quadrada de um número positivo está correto.
 
-- Implemente o teste `testDivideByZero` verificando se o método `divide` lança `IllegalArgumentException` ao tentar dividir por zero.
+---
+
+## 6. Testando um cenário patológico (Corner Case)
+Implementar `testSquareRootNegative` para verificar se `squareRoot` lança exceção ao receber número negativo.  
+Usar `assertThrows`.
+
+---
+
+## 7. Cenário de exceção (Divisão por zero)
+Implementar `testDivideByZero` para verificar se `divide` lança `IllegalArgumentException` ao tentar dividir por zero.
 
 ---
 
 ## 8. Combinando múltiplas entradas (log e seno)
-
-- Implemente testes para os métodos `log` e `sin`.
-- Garanta a precisão dos resultados esperados para valores positivos comuns.
+Implementar testes para métodos `log` e `sin`, garantindo precisão para valores positivos comuns.
 
 ---
 
 ## 9. Priorizando testes com base na cobertura e comportamento
+**Quais métodos merecem mais atenção?**
+- `divide`, `squareRoot` e `log` → possuem casos de exceção além dos casos válidos.
 
-**Análise textual:**
-- Quais métodos da calculadora merecem mais atenção nos testes?
-- Como a cobertura de código pode ajudar a identificar lacunas?
+**Como a cobertura ajuda?**
+- Mostra quais linhas e ramos condicionais foram executados.
+- Indica trechos não testados (por exemplo, exceções não disparadas).
+- Orienta a criar testes adicionais para cobrir lacunas.
 
 ---
 
 ## 10. Nomeando testes de forma adequada
+- Revisar nomes de todos os testes criados.
+- Renomear para seguir boas práticas (clareza e expressividade).
 
-- Revise os nomes de todos os testes criados.
-- Renomeie aqueles que não seguem boas práticas de clareza e expressividade.
-- Explique sua escolha em **dois exemplos**.
+**Exemplos:**
+- `test1` → `shouldReturnSumWhenAddingTwoPositiveNumbers`
+- `rootTest` → `shouldThrowExceptionWhenSquareRootIsNegative`
 
 ---
 
 ## 11. Organizando os testes por comportamento
-
-- Crie a classe `ScientificCalculatorTest`.
-- Agrupe testes semelhantes (ex.: testes de erro, testes de funções trigonométricas) usando:
+- Criar classe `ScientificCalculatorTest`.
+- Agrupar testes semelhantes com:
   - Comentários
   - Métodos auxiliares
 
 ---
-
-**Entrega:**
-- Salve o trabalho em PDF nomeado como:
-  
