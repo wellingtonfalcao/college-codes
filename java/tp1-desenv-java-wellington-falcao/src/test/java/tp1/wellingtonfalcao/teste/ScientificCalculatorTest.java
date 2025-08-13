@@ -4,8 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import tp1.wellingtonfalcao.teste.main.domain.ScientificCalculator;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ScientificCalculatorTest {
 
@@ -82,7 +81,7 @@ public class ScientificCalculatorTest {
         String msgEsperada = "Division by zero";
 
         //Quando - Execution (não precisa de retorno)
-        IllegalArgumentException excecaoLancada = assertThrows(IllegalArgumentException.class, () -> calc.divide(numero1, numero2),
+        IllegalArgumentException excecaoLancada = assertThrowsExactly(IllegalArgumentException.class, () -> calc.divide(numero1, numero2),
                 "Deveria lançar um IllegalArgumentException caso o divisor for zero ");
 
         //Então - Assertion
