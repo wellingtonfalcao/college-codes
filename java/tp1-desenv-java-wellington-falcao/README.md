@@ -23,7 +23,7 @@
 **Tarefa:**  
 Tirar um print do ambiente configurado.
 
-📸 **Print do ambiente configurado:** *(inserir imagem aqui)*
+![Print do ambiente configurado:](img/captura-ambiente.png)
 
 ---
 
@@ -44,6 +44,8 @@ Tirar um print do ambiente configurado.
 Fiz o teste do método `add()` da classe `ScientificCalculator`.  
 Na classe `ScientificCalculatorTest`, criei o método `testeAddition()` com `@Test`, instanciei `calc` e usei `assertEquals` para comparar o valor esperado com o obtido.  
 O teste passou com sucesso.
+
+![Print do ambiente configurado:](img/asser-equals.png)
 
 ---
 
