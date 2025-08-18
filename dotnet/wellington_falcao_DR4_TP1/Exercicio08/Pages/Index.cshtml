@@ -1,0 +1,27 @@
+﻿@page
+@model Exercicio08.Pages.IndexModel
+@{
+    ViewData["Title"] = "Lista de produtos";
+}
+
+<h1>Lista de Produtos</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var produto in Model.Produtos)
+        {
+            <tr>
+                <td>@produto.Nome</td>
+                <td>R$ @produto.Preco</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p><a asp-page="/Sobre">Ir para a página Sobre</a></p>

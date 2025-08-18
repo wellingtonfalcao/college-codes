@@ -1,0 +1,35 @@
+﻿@page "/"
+@model Exercicio12.Pages.AddEventModel
+@{
+    ViewData["Title"] = "Cadastrar Evento";
+}
+
+<h1>Cadastrar Evento</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="titulo">Título:</label>
+        <input asp-for="NovoEvento.Titulo" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="data">Data:</label>
+        <input asp-for="NovoEvento.Data" type="date" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="local">Local:</label>
+        <input asp-for="NovoEvento.Local" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Cadastrar</button>
+</form>
+
+@if (Model.EventoCriado)
+{
+    <hr />
+    <h3>Evento cadastrado com sucesso!</h3>
+    <p><b>Título:</b> @Model.NovoEvento.Titulo</p>
+    <p><b>Data:</b> @Model.NovoEvento.Data.ToShortDateString()</p>
+    <p><b>Local:</b> @Model.NovoEvento.Local</p>
+}
