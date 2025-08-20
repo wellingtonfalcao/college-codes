@@ -1,0 +1,23 @@
+﻿@page "/"
+@model WebApplication2.Pages.GravarArquivoModel
+@{
+    ViewData["Title"] = "Gravar Arquivo";
+}
+
+<h2>Gravar Arquivo</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Input.Conteudo"></label>
+        <textarea asp-for="Input.Conteudo" class="form-control"></textarea>
+        <span asp-validation-for="Input.Conteudo" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Gravar</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.FilePath))
+{
+    <div class="alert alert-success mt-3">
+        Arquivo gravado com sucesso: <a href="@Model.FilePath" download>Download</a>
+    </div>
+}

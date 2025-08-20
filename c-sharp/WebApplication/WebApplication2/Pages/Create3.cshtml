@@ -1,0 +1,31 @@
+﻿@page "/create3"
+@model WebApplication2.Pages.Create3Model
+@{
+    ViewData["Title"] = "Criar conta";
+}
+
+<h1>Criar</h1>
+<h2>Conta</h2>
+<div>
+    <div class="col-md-4">
+        <form method="post">
+            <label asp-for="Input.Nome">Nome</label>
+            <input asp-for="Input.Nome" class="form-control" />
+            <span asp-validation-for="Input.Nome" class="text-danger"></span><br />
+
+            <label asp-for="Input.Saldo">Saldo</label>
+            <input asp-for="Input.Saldo" class="form-control" />
+            <span asp-validation-for="Input.Saldo" class="text-danger"></span>
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (Model.Conta2 != null)
+{
+    <div class="alert alert-success mt-3">
+        <span>Conta criada com sucesso: <strong>@Model.Conta2.Nome</strong> com saldo de <strong>@Model.Conta2.Saldo</strong></span>
+    </div>
+}
