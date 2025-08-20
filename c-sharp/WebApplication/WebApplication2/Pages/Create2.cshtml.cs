@@ -8,7 +8,7 @@ namespace WebApplication2.Pages
     {
 
         [BindProperty]
-        public Conta Conta { get; set; }
+        public Conta2 Conta { get; set; }
         public void OnPost()
         {
             if(!ModelState.IsValid)

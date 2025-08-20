@@ -1,4 +1,4 @@
-﻿@page "/Create1"
+﻿@page "/create1"
 @model WebApplication2.Pages.Create1Model
 @{
     ViewData["Title"] = "Cadastrar nome";
@@ -14,18 +14,8 @@
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 
-@if (Model.FormEnviado) // Mostra SOMENTE se o usuário já postou algo
-{
-    if (!string.IsNullOrEmpty(Model.Nome))
-    {
-        <div class="alert alert-success mt-3">
-            <span>Você cadastrou: <strong>@Model.Nome</strong></span>
-        </div>
-    }
-    else
-    {
-        <div class="alert alert-warning mt-3">
-            <span>Nenhum nome foi cadastrado.</span>
-        </div>
-    }
+@if (Model.Nome != null) {
+    <div class="alert alert-success mt-3">
+        <span>Você cadastrou o nome: <strong>@Model.Nome</strong></span>
+    </div>
 }

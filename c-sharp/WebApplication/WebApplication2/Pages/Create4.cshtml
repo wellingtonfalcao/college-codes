@@ -1,0 +1,22 @@
+﻿@page "/create4"
+@model WebApplication2.Pages.Create4Model
+@{
+    ViewData["Title"] = "Cadastrar nome";
+    var nome = TempData["Nome"] as string;
+}
+
+<h2>Cadastrar Conta (via parâmetro)</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" name="Nome" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+@if (!string.IsNullOrEmpty(nome))
+{
+    <div class="alert alert-info mt-3">
+        Você cadastrou: <strong>@nome</strong>
+    </div>
+}
