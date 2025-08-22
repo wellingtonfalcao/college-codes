@@ -1,0 +1,20 @@
+﻿@page "/lerarquivo"
+@model WebApplication2.Pages.LerArquivoModel
+@{
+    ViewData["Title"] = "Ler Arquivo";
+}
+
+<h2>Arquivos em wwwroot/files</h2>
+
+<ul>
+    @foreach (var arq in Model.Arquivos)
+    {
+        <li>
+            //Lista os arquivos com foreach da pasta files, preecho com a url ~/ baseada na pasta raiz e extendo com o nome do arquivo
+            <a href="@Url.Content("~/files/" + arq)" target="_blank">@arq</a>
+        </li>
+    }
+</ul>
+<form method="post">
+
+</form>

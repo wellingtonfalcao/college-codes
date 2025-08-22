@@ -14,7 +14,7 @@ namespace WebApplication2.Pages
             if (!ModelState.IsValid) return;
 
             // Define o nome do arquivo e o caminho onde será salvo
-            var fileName = "arquivo.txt";
+            var fileName = "arquivo2.txt";
             var caminho = "wwwroot/files/" + fileName;
 
             //Função que grava o conteúdo no arquivo
