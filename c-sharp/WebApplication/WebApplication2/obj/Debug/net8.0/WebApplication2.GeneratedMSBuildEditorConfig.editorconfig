@@ -36,6 +36,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Repositórios/college-codes/c-sharp/WebApplication/WebApplication2/Pages/Create5.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlNS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repositórios/college-codes/c-sharp/WebApplication/WebApplication2/Pages/Create6.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlNi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repositórios/college-codes/c-sharp/WebApplication/WebApplication2/Pages/Create7.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlNy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Repositórios/college-codes/c-sharp/WebApplication/WebApplication2/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Repositórios/college-codes/c-sharp/WebApplication/WebApplication2/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repositórios/college-codes/c-sharp/WebApplication/WebApplication2/Pages/LerArquivo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVyQXJxdWl2by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Repositórios/college-codes/c-sharp/WebApplication/WebApplication2/Pages/Privacy.cshtml]
