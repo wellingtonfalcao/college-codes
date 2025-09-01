@@ -1,0 +1,15 @@
+﻿@page "{id?}"
+@model WebApplication2.Pages.Create9Model
+@{
+    ViewData["Title"] = "Detalhes da conta";
+}
+
+<h2>Detalhes da conta</h2>
+<ul>
+    @if (@Model.Conta != null) {
+        <p>Detalhes da conta: <strong>@Model.Conta</strong></p>
+    }
+    else {
+        <p><strong>Conta inválida</strong></p>
+    }
+</ul>

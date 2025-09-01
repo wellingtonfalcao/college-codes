@@ -1,0 +1,15 @@
+﻿@page "/lerarquivo"
+@model WebApplication2.Pages.LerArquivoModel
+@{
+    ViewData["Title"] = "Ler Arquivo";
+}
+
+<h2>Arquivos em wwwroot/files</h2>
+
+<ul>
+    @foreach (var arq in Model.Arquivos) {
+        <li>
+            <a href="@Url.Content("~/files/" + arq)">@arq</a>
+        </li>
+    }
+</ul>

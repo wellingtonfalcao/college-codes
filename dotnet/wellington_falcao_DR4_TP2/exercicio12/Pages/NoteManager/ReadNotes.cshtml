@@ -1,0 +1,23 @@
+﻿@page "/readnotes"
+@model exercicio12.Pages.NoteManager.ReadNotesModel
+@{
+    ViewData["Title"] = "Ler Notas";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<ul class="list-group mb-3">
+    @foreach (var file in Model.NoteFiles)
+    {
+        <li class="list-group-item">
+            <a asp-page="/NoteManager/ReadNotes" asp-route-SelectedFile="@file">@file</a>
+        </li>
+    }
+</ul>
+
+<!-- Caso tenha notas salvas exiba a lista e permita ler o conteudo numa tag <pre> -->
+@if (!string.IsNullOrEmpty(Model.SelectedContent))
+{
+    <h3>Conteúdo do arquivo: @Model.SelectedFile</h3>
+    <pre class="border p-2 bg-light">@Model.SelectedContent</pre>
+}

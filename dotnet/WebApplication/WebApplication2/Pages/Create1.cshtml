@@ -1,0 +1,21 @@
+﻿@page "/create1"
+@model WebApplication2.Pages.Create1Model
+@{
+    ViewData["Title"] = "Cadastrar nome";
+}
+
+<h2>Cadastrar nome</h2>
+
+<form method="post">
+    <div>
+        <label for="nome">Nome: </label>
+        <input name="Nome" class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+@if (Model.Nome != null) {
+    <div class="alert alert-info mt-3"> 
+        Você cadastrou: <strong>@Model.Nome</strong>
+    </div>
+}

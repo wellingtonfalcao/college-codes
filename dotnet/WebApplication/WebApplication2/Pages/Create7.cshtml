@@ -1,0 +1,14 @@
+﻿@page "/create7"
+@model WebApplication2.Pages.Create7Model
+@{
+    ViewData["Title"] = "Lista de contas";
+}
+
+<h2>Lista de contas</h2>
+<ul>
+    @foreach (var conta in Model.Contas) {
+        <li>
+            <a asp-page="/CreateDetails7" asp-route-conta="@conta">@conta</a>
+        </li>
+    }
+</ul>

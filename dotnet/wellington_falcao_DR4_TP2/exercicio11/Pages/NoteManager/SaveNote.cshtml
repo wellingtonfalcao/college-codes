@@ -1,0 +1,30 @@
+﻿@page "/savenotes"
+"
+@model exercicio11.Pages.NoteManager.SaveNoteModel
+@{
+    ViewData["Title"] = "Salvar Nota";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Input.Content"></label>
+        <textarea asp-for="Input.Content" class="form-control" rows="5"></textarea>
+        <span asp-validation-for="Input.Content" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Salvar</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.FileName))
+{
+    <div class="alert alert-success mt-3">
+        Nota salva com sucesso! <br />
+        <a href="~/files/@Model.FileName" download>Baixar nota</a>
+    </div>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

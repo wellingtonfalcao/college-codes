@@ -1,0 +1,13 @@
+﻿@page "/index3"
+@model WebApplication1.Pages.Index3Model
+@{
+    ViewData["Title"] = "Minha página";
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem vindo pessoal</h1>
+    @foreach (var conta in @Model.Contas) {
+        <p>@conta</p>
+    }
+</div>

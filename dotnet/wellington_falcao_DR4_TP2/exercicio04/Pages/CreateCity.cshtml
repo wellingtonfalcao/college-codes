@@ -1,0 +1,28 @@
+﻿@page "/"
+@model exercicio04.Pages.CityManager.CreateCityModel
+@{
+    ViewData["Title"] = "Cadastrar Cidade";
+}
+
+<h2>Cadastrar Cidade Turística</h2>
+
+<form method="post" novalidate>
+    <div class="form-group">
+        <label asp-for="Input.CityName" class="form-label"></label>
+        <input asp-for="Input.CityName" class="form-control" />
+        <span asp-validation-for="Input.CityName" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Salvar</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.SubmittedCity))
+{
+    <div class="alert alert-success mt-3">
+        Cidade cadastrada: <strong>@Model.SubmittedCity</strong>
+    </div>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

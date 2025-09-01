@@ -1,0 +1,23 @@
+﻿@page "/"
+@model exercicio02.Pages.CreateCityModel
+@{
+    ViewData["Title"] = "Cadastrar Cidade";
+}
+
+<h2>Cadastrar Cidade Turística</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="cityName">Nome da Cidade</label>
+        <input type="text" id="cityName" name="cityName" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Salvar</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.SubmittedCity))
+{
+    <div class="alert alert-success mt-3">
+        Cidade cadastrada: <strong>@Model.SubmittedCity</strong>
+    </div>
+}
