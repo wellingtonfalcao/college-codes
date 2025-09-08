@@ -1,6 +1,13 @@
 package br.edu.infnet.apiwellington.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "usuarios")
 public class Usuario {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String login;
     private String senha;
