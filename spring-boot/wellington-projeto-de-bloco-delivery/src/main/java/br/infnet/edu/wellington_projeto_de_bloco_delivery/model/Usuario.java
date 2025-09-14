@@ -1,10 +1,26 @@
 package br.infnet.edu.wellington_projeto_de_bloco_delivery.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "usuarios")
 public class Usuario {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String login;
     private String senha;
     private String email;
+
+    // Construtores
+    public Usuario() {}
+
+    public Usuario(String login, String senha, String email) {
+        this.login = login;
+        this.senha = senha;
+        this.email = email;
+    }
 
     public int getId() {
         return id;

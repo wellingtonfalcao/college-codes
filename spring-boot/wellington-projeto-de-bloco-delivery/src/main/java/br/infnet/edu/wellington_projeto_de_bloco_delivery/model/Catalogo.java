@@ -1,6 +1,12 @@
 package br.infnet.edu.wellington_projeto_de_bloco_delivery.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "catalogos")
 public class Catalogo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nome;
 

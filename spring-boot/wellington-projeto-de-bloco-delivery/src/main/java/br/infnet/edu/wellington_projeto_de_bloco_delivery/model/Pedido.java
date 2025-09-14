@@ -1,17 +1,36 @@
 package br.infnet.edu.wellington_projeto_de_bloco_delivery.model;
 
+import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Entity
+@Table(name = "pedidos")
 public class Pedido {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private int usuarioId;
     private double precoTotal;
+
+    @Enumerated(EnumType.STRING)
     private StatusPedido status;
+
     private LocalDateTime dataPedido;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "pedido_id")
     private List<ItemPedido> itens;
-    private String cep; // Adicionado para verificação de CEP
-    private String codigoProtocolo; // Adicionado para RF06
+
+    private String cep;
+    private String codigoProtocolo;
+
+    // Construtor
+    public Pedido() {
+        this.dataPedido = LocalDateTime.now();
+        this.status = StatusPedido.PEDIDO_REALIZADO;
+    }
 
     public int getId() {
         return id;

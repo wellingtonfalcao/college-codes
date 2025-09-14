@@ -11,7 +11,9 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 @Component
@@ -25,17 +27,40 @@ public class ConsoleApp implements CommandLineRunner {
 
     private Scanner scanner = new Scanner(System.in);
     private List<Produto> produtos = new ArrayList<>();
+    private Map<String, UsuarioMock> usuariosMock = new HashMap<>();
+    private UsuarioMock usuarioLogado = null;
     private int pedidoCounter = 1;
     private int itemPedidoCounter = 1;
+
+    // Classe interna para representar usuários mock
+    private static class UsuarioMock {
+        private String email;
+        private String senha;
+        private String nome;
+        private int id;
+
+        public UsuarioMock(String email, String senha, String nome, int id) {
+            this.email = email;
+            this.senha = senha;
+            this.nome = nome;
+            this.id = id;
+        }
+
+        public String getEmail() { return email; }
+        public String getSenha() { return senha; }
+        public String getNome() { return nome; }
+        public int getId() { return id; }
+    }
 
     @Override
     public void run(String... args) throws Exception {
         inicializarDados();
+        fazerLogin();
         exibirMenuPrincipal();
     }
 
     private void inicializarDados() {
-
+        // Inicializar produtos
         Produto p1 = new Produto();
         p1.setId(1);
         p1.setNome("Pizza Marguerita");
@@ -60,23 +85,66 @@ public class ConsoleApp implements CommandLineRunner {
         produtos.add(p1);
         produtos.add(p2);
         produtos.add(p3);
+
+        // Inicializar usuários mock
+        usuariosMock.put("cliente@email.com", new UsuarioMock("cliente@email.com", "123456", "Tiago Silva", 1));
     }
 
+    private void fazerLogin() {
+        System.out.println("\n" + "==================================================");
+        System.out.println("        BEM-VINDO AO GERENCIADOR DE PEDIDOS");
+        System.out.println("==================================================");
+        System.out.println("\nSalve Mestre, utilize estes dados mock para acessar o sistema");
+        System.out.println("Email: cliente@email.com | Senha: 123456");
+        boolean loginEfetuado = false;
+
+        while (!loginEfetuado) {
+            System.out.println("\nDigite seu email");
+            System.out.print("Email: ");
+            String email = scanner.nextLine();
+
+            System.out.println("\nDigite sua senha");
+            System.out.print("Senha: ");
+            String senha = scanner.nextLine();
+
+            // Verificar credenciais
+            if (usuariosMock.containsKey(email)) {
+                UsuarioMock usuario = usuariosMock.get(email);
+                if (usuario.getSenha().equals(senha)) {
+                    usuarioLogado = usuario;
+                    loginEfetuado = true;
+                    System.out.println("\nLogin realizado com sucesso!");
+                } else {
+                    System.out.println("Senha incorreta! Tente novamente.");
+                }
+            } else {
+                System.out.println("Usuário não encontrado! Tente novamente.");
+            }
+
+            if (!loginEfetuado) {
+                System.out.println("\nDica para login:");
+                System.out.println("Email: cliente@email.com | Senha: 123456");
+            }
+        }
+    }
 
     private void exibirMenuPrincipal() {
         while (true) {
-            System.out.println("\n=== SISTEMA DE DELIVERY ===");
+            System.out.println("\n" + "==================================================");
+            System.out.println("               SISTEMA DE DELIVERY");
+            System.out.println("==================================================");
+            System.out.println("Bem-vindo, " + usuarioLogado.getNome() + "\n");
+
             System.out.println("1. Fazer pedido");
             System.out.println("2. Verificar CEP");
             System.out.println("3. Listar pedidos");
             System.out.println("4. Buscar pedido por ID");
             System.out.println("5. Atualizar status do pedido");
-            System.out.println("6. Refazer pedido");
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
 
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // Limpar buffer
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1:
@@ -94,11 +162,8 @@ public class ConsoleApp implements CommandLineRunner {
                 case 5:
                     atualizarStatusPedido();
                     break;
-                case 6:
-                    refazerPedido();
-                    break;
                 case 0:
-                    System.out.println("Saindo do sistema...");
+                    System.out.println("Programa encerrado com sucesso!");
                     return;
                 default:
                     System.out.println("Opção inválida!");
@@ -109,6 +174,7 @@ public class ConsoleApp implements CommandLineRunner {
     private void fazerPedido() {
         try {
             System.out.println("\n=== NOVO PEDIDO ===");
+            System.out.println("Usuário: " + usuarioLogado.getNome());
 
             System.out.print("Digite o CEP para entrega (ex: 22000-000): ");
             String cep = scanner.nextLine();
@@ -125,7 +191,7 @@ public class ConsoleApp implements CommandLineRunner {
             // Criar pedido
             Pedido pedido = new Pedido();
             pedido.setId(pedidoCounter++);
-            pedido.setUsuarioId(1); // Usuário fixo para demonstração
+            pedido.setUsuarioId(usuarioLogado.getId()); // Usar ID do usuário logado
             pedido.setCep(cep);
             pedido.setDataPedido(LocalDateTime.now());
 
@@ -134,7 +200,7 @@ public class ConsoleApp implements CommandLineRunner {
             // Adicionar itens
             boolean continuar = true;
             while (continuar) {
-                System.out.print("\nDigite o ID do produto (0 para finalizar): ");
+                System.out.print("\nDigite o ID do produto (0 para finalizar o pedido): ");
                 int produtoId = scanner.nextInt();
 
                 if (produtoId == 0) {
@@ -175,16 +241,16 @@ public class ConsoleApp implements CommandLineRunner {
             // Criar pedido através do service
             Pedido pedidoCriado = pedidoService.criarPedido(pedido);
 
-            System.out.println("\n✅ PEDIDO CRIADO COM SUCESSO!");
+            System.out.println("\nPEDIDO CRIADO COM SUCESSO!");
             System.out.printf("Número do pedido: %d%n", pedidoCriado.getId());
             System.out.printf("Código de protocolo: %s%n", pedidoCriado.getCodigoProtocolo());
             System.out.printf("Total: R$ %.2f%n", pedidoCriado.getPrecoTotal());
             System.out.printf("Status: %s%n", pedidoCriado.getStatus());
 
         } catch (CepForaCoberturaException e) {
-            System.out.println("❌ ERRO: " + e.getMessage());
+            System.out.println("ERRO: " + e.getMessage());
         } catch (Exception e) {
-            System.out.println("❌ Erro ao criar pedido: " + e.getMessage());
+            System.out.println("Erro ao criar pedido: " + e.getMessage());
         }
     }
 
@@ -195,10 +261,10 @@ public class ConsoleApp implements CommandLineRunner {
 
         try {
             boolean valido = logisticaService.verificarCoberturaEntrega(cep);
-            System.out.println("✅ CEP VÁLIDO! Área de entrega coberta.");
+            System.out.println("EP VÁLIDO! Área de entrega coberta.");
             System.out.println("CEP: " + cep);
         } catch (CepForaCoberturaException e) {
-            System.out.println("❌ CEP FORA DA ÁREA DE COBERTURA: " + e.getMessage());
+            System.out.println("CEP FORA DA ÁREA DE COBERTURA: " + e.getMessage());
         }
     }
 
@@ -227,7 +293,7 @@ public class ConsoleApp implements CommandLineRunner {
             }
 
         } catch (Exception e) {
-            System.out.println("❌ Erro ao listar pedidos: " + e.getMessage());
+            System.out.println("Erro ao listar pedidos: " + e.getMessage());
         }
     }
 
@@ -255,9 +321,9 @@ public class ConsoleApp implements CommandLineRunner {
             }
 
         } catch (PedidoNaoEncontradoException e) {
-            System.out.println("❌ " + e.getMessage());
+            System.out.println(e.getMessage());
         } catch (Exception e) {
-            System.out.println("❌ Erro ao buscar pedido: " + e.getMessage());
+            System.out.println("Erro ao buscar pedido: " + e.getMessage());
         }
     }
 
@@ -275,7 +341,7 @@ public class ConsoleApp implements CommandLineRunner {
 
         System.out.print("Escolha o novo status: ");
         int escolha = scanner.nextInt();
-        scanner.nextLine(); // Limpar buffer
+        scanner.nextLine();
 
         if (escolha < 1 || escolha > statuses.length) {
             System.out.println("Opção inválida!");
@@ -286,31 +352,11 @@ public class ConsoleApp implements CommandLineRunner {
 
         try {
             Pedido pedidoAtualizado = pedidoService.atualizarStatus(id, novoStatus);
-            System.out.printf("✅ Status do pedido #%d atualizado para: %s%n",
+            System.out.printf("Status do pedido #%d atualizado para: %s%n",
                     pedidoAtualizado.getId(), pedidoAtualizado.getStatus());
 
         } catch (Exception e) {
-            System.out.println("❌ Erro ao atualizar status: " + e.getMessage());
-        }
-    }
-
-    private void refazerPedido() {
-        System.out.println("\n=== REFAZER PEDIDO ===");
-        System.out.print("Digite o ID do pedido que deseja refazer: ");
-        int idAntigo = scanner.nextInt();
-        scanner.nextLine(); // Limpar buffer
-
-        try {
-            Pedido novoPedido = pedidoService.refazerPedido(idAntigo);
-            System.out.println("✅ PEDIDO REFEITO COM SUCESSO!");
-            System.out.printf("Novo pedido #%d criado%n", novoPedido.getId());
-            System.out.printf("Código de protocolo: %s%n", novoPedido.getCodigoProtocolo());
-            System.out.printf("Total: R$ %.2f%n", novoPedido.getPrecoTotal());
-
-        } catch (PedidoNaoEncontradoException e) {
-            System.out.println("❌ " + e.getMessage());
-        } catch (Exception e) {
-            System.out.println("❌ Erro ao refazer pedido: " + e.getMessage());
+            System.out.println("Erro ao atualizar status: " + e.getMessage());
         }
     }
 }

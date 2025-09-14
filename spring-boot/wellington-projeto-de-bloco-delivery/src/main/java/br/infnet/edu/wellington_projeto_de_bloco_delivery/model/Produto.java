@@ -1,11 +1,20 @@
 package br.infnet.edu.wellington_projeto_de_bloco_delivery.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "produtos")
 public class Produto {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String nome;
     private String descricao;
     private double preco;
     private int categoriaId;
+
+    public Produto() {}
 
     public int getId() {
         return id;

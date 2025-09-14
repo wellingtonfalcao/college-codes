@@ -1,6 +1,14 @@
 package br.infnet.edu.wellington_projeto_de_bloco_delivery.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table (name = "cadastros")
 public class Cadastro {
+
+    @Id
     private int usuarioId;
     private String logradouro;
     private String numero;

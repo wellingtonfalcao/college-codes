@@ -1,8 +1,17 @@
 package br.infnet.edu.wellington_projeto_de_bloco_delivery.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "categorias")
 public class Categoria {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String nome;
+
+    public Categoria() {}
 
     public int getId() {
         return id;
