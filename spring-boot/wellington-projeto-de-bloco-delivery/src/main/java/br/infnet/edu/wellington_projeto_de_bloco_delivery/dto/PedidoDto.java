@@ -1,0 +1,80 @@
+package br.infnet.edu.wellington_projeto_de_bloco_delivery.dto;
+
+import br.infnet.edu.wellington_projeto_de_bloco_delivery.model.StatusPedido;
+import java.time.LocalDateTime;
+import java.util.List;
+
+public class PedidoDto {
+    private int id;
+    private int usuarioId;
+    private double precoTotal;
+    private StatusPedido status;
+    private LocalDateTime dataPedido;
+    private List<ItemPedidoDto> itens;
+    private String cep;
+    private String codigoProtocolo;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getUsuarioId() {
+        return usuarioId;
+    }
+
+    public void setUsuarioId(int usuarioId) {
+        this.usuarioId = usuarioId;
+    }
+
+    public double getPrecoTotal() {
+        return precoTotal;
+    }
+
+    public void setPrecoTotal(double precoTotal) {
+        this.precoTotal = precoTotal;
+    }
+
+    public StatusPedido getStatus() {
+        return status;
+    }
+
+    public void setStatus(StatusPedido status) {
+        this.status = status;
+    }
+
+    public LocalDateTime getDataPedido() {
+        return dataPedido;
+    }
+
+    public void setDataPedido(LocalDateTime dataPedido) {
+        this.dataPedido = dataPedido;
+    }
+
+    public List<ItemPedidoDto> getItens() {
+        return itens;
+    }
+
+    public void setItens(List<ItemPedidoDto> itens) {
+        this.itens = itens;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public String getCodigoProtocolo() {
+        return codigoProtocolo;
+    }
+
+    public void setCodigoProtocolo(String codigoProtocolo) {
+        this.codigoProtocolo = codigoProtocolo;
+    }
+}

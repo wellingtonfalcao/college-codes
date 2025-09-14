@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Infnet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77e76fef5a3e88e90dd60726cf9a2dd3bc53fa55")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfa170ac1e5b8e9f70e96a587d5edb6db3ccb9aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Infnet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Infnet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

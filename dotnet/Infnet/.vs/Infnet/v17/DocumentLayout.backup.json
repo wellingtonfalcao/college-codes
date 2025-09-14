@@ -1,14 +1,188 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Reposit\u00F3rios\\college-codes\\dotnet\\Infnet\\",
+  "WorkspaceRootPath": "C:\\Users\\lpmaia\\Downloads\\Infnet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Reposit\u00F3rios\\college-codes\\dotnet\\Infnet\\Infnet\\Migrations\\20250906012127_Inicio 1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infnet\\Migrations\\20250906012127_Inicio 1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Infnet/True/SqlTable/dbo.Enderecos.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2AFCAB0-0DA7-4CC5-8EEA-DD0B4DD345BD}|Infnet\\Infnet.csproj|e:\\reposit\u00F3rios\\college-codes\\dotnet\\infnet\\infnet\\data\\configurations\\enderecoconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2AFCAB0-0DA7-4CC5-8EEA-DD0B4DD345BD}|Infnet\\Infnet.csproj|solutionrelative:infnet\\data\\configurations\\enderecoconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\infnet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\infnet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\enderecos\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\enderecos\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\enderecos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\enderecos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\data\\configurations\\emailconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\data\\configurations\\emailconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\alunos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\alunos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\emails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\emails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\emails\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\emails\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\alunos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\alunos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\enderecos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\enderecos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\enderecos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\enderecos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\enderecos\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\enderecos\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\enderecos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\enderecos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\enderecos\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\enderecos\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\enderecos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\enderecos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\enderecos\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\enderecos\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\enderecos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\enderecos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\emails\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\emails\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\emails\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\emails\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\emails\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\emails\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\emails\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\emails\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\emails\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\emails\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\emails\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\emails\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\emails\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\emails\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\emails\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\emails\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Infnet/True/SqlTable/dbo.Emails.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Migrations\\20250902002840_Inicio5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infnet\\Migrations\\20250902002840_Inicio5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\data\\infnetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\data\\infnetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\data\\configurations\\enderecoconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\data\\configurations\\enderecoconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\data\\configurations\\alunoconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\data\\configurations\\alunoconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\alunos\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\alunos\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\alunos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\alunos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\alunos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\alunos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\alunos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\alunos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\alunos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\alunos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\alunos\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\alunos\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\alunos\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\alunos\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\pages\\alunos\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\pages\\alunos\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\models\\alunodisciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\models\\alunodisciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\models\\disciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\models\\disciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|c:\\users\\lpmaia\\downloads\\infnet\\infnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{06194102-9756-4E02-914C-A3783C5D7E85}|Infnet\\Infnet.csproj|solutionrelative:infnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +197,593 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250906012127_Inicio 1.cs",
-              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\dotnet\\Infnet\\Infnet\\Migrations\\20250906012127_Inicio 1.cs",
-              "RelativeDocumentMoniker": "Infnet\\Migrations\\20250906012127_Inicio 1.cs",
-              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\dotnet\\Infnet\\Infnet\\Migrations\\20250906012127_Inicio 1.cs",
-              "RelativeToolTip": "Infnet\\Migrations\\20250906012127_Inicio 1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "dbo.Enderecos [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Infnet/True/SqlTable/dbo.Enderecos.sql",
+              "ToolTip": "dbo.Enderecos [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-09-02T01:04:10.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Alunos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Index.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Alunos\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:02:18.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Index.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Emails\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Index.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Emails\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:30:30.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmailConfigurations.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Data\\Configurations\\EmailConfigurations.cs",
+              "RelativeDocumentMoniker": "Infnet\\Data\\Configurations\\EmailConfigurations.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Data\\Configurations\\EmailConfigurations.cs",
+              "RelativeToolTip": "Infnet\\Data\\Configurations\\EmailConfigurations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T01:21:27.562Z",
+              "WhenOpened": "2025-09-02T00:25:05.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Create.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Enderecos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Create.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Enderecos\\Create.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:32:52.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Enderecos\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Create.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Enderecos\\Create.cshtml.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:32:52.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EnderecoConfigurations.cs",
-              "DocumentMoniker": "E:\\Reposit\u00F3rios\\college-codes\\dotnet\\Infnet\\Infnet\\Data\\Configurations\\EnderecoConfigurations.cs",
-              "RelativeDocumentMoniker": "Infnet\\Data\\Configurations\\EnderecoConfigurations.cs",
-              "ToolTip": "E:\\Reposit\u00F3rios\\college-codes\\dotnet\\Infnet\\Infnet\\Data\\Configurations\\EnderecoConfigurations.cs",
-              "RelativeToolTip": "Infnet\\Data\\Configurations\\EnderecoConfigurations.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABXAAAAAAAAAA==",
+              "Title": "Infnet.csproj",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Infnet.csproj",
+              "RelativeDocumentMoniker": "Infnet\\Infnet.csproj",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Infnet.csproj",
+              "RelativeToolTip": "Infnet\\Infnet.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-29T23:47:06.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Emails\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Index.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Emails\\Index.cshtml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowBkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T01:18:10.548Z",
+              "WhenOpened": "2025-09-02T00:30:30.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Alunos\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Index.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Alunos\\Index.cshtml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:02:18.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Enderecos\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Index.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Enderecos\\Index.cshtml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:32:54.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Enderecos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Index.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Enderecos\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACUAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:32:54.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Enderecos\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Delete.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Enderecos\\Delete.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:32:54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Enderecos\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Delete.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Enderecos\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:32:53.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Enderecos\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Details.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Enderecos\\Details.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:32:53.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Details.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Enderecos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Details.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Enderecos\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:32:53.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Enderecos\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Edit.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Enderecos\\Edit.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:32:53.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Enderecos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Enderecos\\Edit.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Enderecos\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:32:53.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Emails\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Delete.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Emails\\Delete.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:30:30.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Emails\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Delete.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Emails\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:30:30.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Emails\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Details.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Emails\\Details.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:30:30.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Details.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Emails\\Details.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Details.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Emails\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:30:30.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Emails\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Edit.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Emails\\Edit.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:30:29.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Emails\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Edit.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Emails\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:30:29.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Emails\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Create.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Emails\\Create.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:30:29.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Create.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Emails\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Emails\\Create.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Emails\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:30:29.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "dbo.Emails [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Infnet/True/SqlTable/dbo.Emails.sql",
+              "ToolTip": "dbo.Emails [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-09-02T00:29:06.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20250902002840_Inicio5.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Migrations\\20250902002840_Inicio5.cs",
+              "RelativeDocumentMoniker": "Infnet\\Migrations\\20250902002840_Inicio5.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Migrations\\20250902002840_Inicio5.cs",
+              "RelativeToolTip": "Infnet\\Migrations\\20250902002840_Inicio5.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:28:40.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:02:45.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "InfnetDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Data\\InfnetDbContext.cs",
+              "RelativeDocumentMoniker": "Infnet\\Data\\InfnetDbContext.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Data\\InfnetDbContext.cs",
+              "RelativeToolTip": "Infnet\\Data\\InfnetDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T00:00:56.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Alunos\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Create.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Alunos\\Create.cshtml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:02:16.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AlunoConfigurations.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Data\\Configurations\\AlunoConfigurations.cs",
+              "RelativeDocumentMoniker": "Infnet\\Data\\Configurations\\AlunoConfigurations.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Data\\Configurations\\AlunoConfigurations.cs",
+              "RelativeToolTip": "Infnet\\Data\\Configurations\\AlunoConfigurations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T00:49:56.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "EnderecoConfigurations.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Data\\Configurations\\EnderecoConfigurations.cs",
+              "RelativeDocumentMoniker": "Infnet\\Data\\Configurations\\EnderecoConfigurations.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Data\\Configurations\\EnderecoConfigurations.cs",
+              "RelativeToolTip": "Infnet\\Data\\Configurations\\EnderecoConfigurations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T23:50:21.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Create.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Alunos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Create.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Alunos\\Create.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:02:16.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Aluno.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Models\\Aluno.cs",
+              "RelativeDocumentMoniker": "Infnet\\Models\\Aluno.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Models\\Aluno.cs",
+              "RelativeToolTip": "Infnet\\Models\\Aluno.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T23:47:32.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Details.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Alunos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Details.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Alunos\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:02:17.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Alunos\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Delete.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Alunos\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:02:17.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Alunos\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Delete.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Alunos\\Delete.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:02:17.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Alunos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Edit.cshtml",
+              "RelativeToolTip": "Infnet\\Pages\\Alunos\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T00:02:17.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Alunos\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Details.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Alunos\\Details.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:02:17.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Infnet\\Pages\\Alunos\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Pages\\Alunos\\Edit.cshtml.cs",
+              "RelativeToolTip": "Infnet\\Pages\\Alunos\\Edit.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:02:17.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Endereco.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Models\\Endereco.cs",
+              "RelativeDocumentMoniker": "Infnet\\Models\\Endereco.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Models\\Endereco.cs",
+              "RelativeToolTip": "Infnet\\Models\\Endereco.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T23:47:46.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Email.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Models\\Email.cs",
+              "RelativeDocumentMoniker": "Infnet\\Models\\Email.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Models\\Email.cs",
+              "RelativeToolTip": "Infnet\\Models\\Email.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T23:47:59.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Disciplina.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Models\\Disciplina.cs",
+              "RelativeDocumentMoniker": "Infnet\\Models\\Disciplina.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Models\\Disciplina.cs",
+              "RelativeToolTip": "Infnet\\Models\\Disciplina.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T23:48:13.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AlunoDisciplina.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Models\\AlunoDisciplina.cs",
+              "RelativeDocumentMoniker": "Infnet\\Models\\AlunoDisciplina.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Models\\AlunoDisciplina.cs",
+              "RelativeToolTip": "Infnet\\Models\\AlunoDisciplina.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T00:24:45.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Program.cs",
+              "RelativeDocumentMoniker": "Infnet\\Program.cs",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\Program.cs",
+              "RelativeToolTip": "Infnet\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T23:59:27.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\appsettings.json",
+              "RelativeDocumentMoniker": "Infnet\\appsettings.json",
+              "ToolTip": "C:\\Users\\lpmaia\\Downloads\\Infnet\\Infnet\\appsettings.json",
+              "RelativeToolTip": "Infnet\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-29T23:57:39.675Z",
               "EditorCaption": ""
             }
           ]

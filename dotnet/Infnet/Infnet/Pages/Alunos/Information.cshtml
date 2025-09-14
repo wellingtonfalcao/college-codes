@@ -1,0 +1,30 @@
+﻿@page
+@model InformationModel
+@{
+}
+
+<h1>Informações do Aluno @Model.Aluno.Nome</h1>
+
+<div class="card p-3">
+    <h3>Endereço</h3>
+    <p>@Model.Aluno.Endereco?.Rua - @Model.Aluno.Endereco?.Cep</p>
+
+    <h3>Emails</h3>
+    <ul>
+        @foreach (var email in Model.Aluno.Emails) {
+            <li>@email.Mail</li>
+        }
+    </ul>
+
+    <h3>Disciplinas</h3>
+    <ul>
+        @foreach (var ad in Model.Aluno.AlunoDisciplina) {
+            <li>@ad.Disciplina.Nome</li>
+        }
+    </ul>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+

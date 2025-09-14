@@ -2,20 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infnet.Data.Configurations
-{
-    public class EnderecoConfigurations : IEntityTypeConfiguration<Endereco>
-    {
-        public void Configure(EntityTypeBuilder<Endereco> builder)
-        {
+namespace Infnet.Data.Configurations {
+    public class EnderecoConfigurations : IEntityTypeConfiguration<Endereco> {
+
+        public void Configure(EntityTypeBuilder<Endereco> builder) {
             builder.Property(e => e.Id).HasColumnName("id_endereco");
-            builder.Property(e => e.Logradouro).HasMaxLength(50);
-            builder.Property(e => e.Numero).HasMaxLength(10);
-            builder.HasData(
-                new Endereco { Id = 1, Logradouro = "Rua dos Artistas", Numero = 155, AlunoId = 1 },
-                new Endereco { Id = 2, Logradouro = "Rua dos Escritores", Numero = 356, AlunoId = 2 },
-                new Endereco { Id = 3, Logradouro = "Rua dos Designers", Numero = 2134, AlunoId = 3 }
-                );
+            builder.Property(e => e.Rua).HasMaxLength(50);
+            builder.HasData(new List<Endereco> {
+                new Endereco { Id = 1, Rua = "Endereço do aluno 1", Cep = "11111-111", AlunoId = 1},
+                new Endereco { Id = 2, Rua = "Endereço do aluno 2", Cep = "22222-222", AlunoId = 2},
+                new Endereco { Id = 3, Rua = "Endereço do aluno 3", Cep = "33333-333", AlunoId = 3}
+            });
         }
     }
 }

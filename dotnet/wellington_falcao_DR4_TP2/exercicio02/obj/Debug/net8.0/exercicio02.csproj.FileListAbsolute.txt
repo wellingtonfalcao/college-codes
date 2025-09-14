@@ -1,0 +1,9 @@
+E:\Repositórios\college-codes\dotnet\wellington_falcao_DR4_TP2\exercicio02\obj\Debug\net8.0\rpswa.dswa.cache.json
+E:\Repositórios\college-codes\dotnet\wellington_falcao_DR4_TP2\exercicio02\obj\Debug\net8.0\exercicio02.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repositórios\college-codes\dotnet\wellington_falcao_DR4_TP2\exercicio02\obj\Debug\net8.0\exercicio02.AssemblyInfoInputs.cache
+E:\Repositórios\college-codes\dotnet\wellington_falcao_DR4_TP2\exercicio02\obj\Debug\net8.0\exercicio02.AssemblyInfo.cs
+E:\Repositórios\college-codes\dotnet\wellington_falcao_DR4_TP2\exercicio02\obj\Debug\net8.0\exercicio02.csproj.CoreCompileInputs.cache
+E:\Repositórios\college-codes\dotnet\wellington_falcao_DR4_TP2\exercicio02\obj\Debug\net8.0\exercicio02.MvcApplicationPartsAssemblyInfo.cache
+E:\Repositórios\college-codes\dotnet\wellington_falcao_DR4_TP2\exercicio02\obj\Debug\net8.0\exercicio02.RazorAssemblyInfo.cache
+E:\Repositórios\college-codes\dotnet\wellington_falcao_DR4_TP2\exercicio02\obj\Debug\net8.0\exercicio02.RazorAssemblyInfo.cs
+E:\Repositórios\college-codes\dotnet\wellington_falcao_DR4_TP2\exercicio02\obj\Debug\net8.0\exercicio02.sourcelink.json

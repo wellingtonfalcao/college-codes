@@ -1,0 +1,48 @@
+﻿@page "/"
+@model Infnet.Pages.Alunos.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+
+<form>
+    <p>
+        Nome: <input type="text" asp-for="BuscaNome" />
+        <input type="submit" value="Filtrar" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Alunos[0].Nome)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Alunos) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a> |
+                <a asp-page="/Enderecos/Index" asp-route-id="@item.Id">Endereço</a> |
+                <a asp-page="/Emails/Index" asp-route-id="@item.Id">Emails</a> |
+                <a asp-page="/AlunosDisciplinas/Index" asp-route-id="@item.Id">Disciplinas</a> |
+                <a asp-page="./Information" asp-route-id="@item.Id">Informações</a> 
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
