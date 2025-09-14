@@ -52,9 +52,14 @@ class PedidoTest {
     }
 
     @Test
-    void deveCalcularTotalZeroParaItensNulos() {
+    void deveCalcularTotalCorretamenteComItensDePrecoZero() {
         // Arrange
-        pedido.setItens(null);
+        ItemPedido itemZero = new ItemPedido();
+        itemZero.setProdutoId(3);
+        itemZero.setQuantidade(2);
+        itemZero.setPrecoUnitario(0.0);
+
+        pedido.setItens(Arrays.asList(itemZero));
 
         // Act
         pedido.calcularTotal();

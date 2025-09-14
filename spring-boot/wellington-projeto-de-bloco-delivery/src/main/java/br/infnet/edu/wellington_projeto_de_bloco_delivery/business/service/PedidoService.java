@@ -1,4 +1,4 @@
-package com.delivery.business.service;
+package br.infnet.edu.wellington_projeto_de_bloco_delivery.business.service;
 
 import br.infnet.edu.wellington_projeto_de_bloco_delivery.business.exception.PedidoNaoEncontradoException;
 import br.infnet.edu.wellington_projeto_de_bloco_delivery.model.Pedido;
@@ -8,6 +8,7 @@ import br.infnet.edu.wellington_projeto_de_bloco_delivery.repository.PedidoRepos
 import br.infnet.edu.wellington_projeto_de_bloco_delivery.repository.ItemPedidoRepository;
 import br.infnet.edu.wellington_projeto_de_bloco_delivery.business.service.LogisticaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -92,6 +93,9 @@ public class PedidoService {
         novoPedido.setUsuarioId(pedidoAntigo.getUsuarioId());
         novoPedido.setItens(pedidoAntigo.getItens());
         novoPedido.setCep(pedidoAntigo.getCep());
+
+        // Calcular o total antes de criar o pedido
+        novoPedido.calcularTotal();
 
         return criarPedido(novoPedido);
     }

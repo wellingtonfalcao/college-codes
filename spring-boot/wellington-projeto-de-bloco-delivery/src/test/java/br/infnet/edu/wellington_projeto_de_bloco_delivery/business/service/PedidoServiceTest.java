@@ -1,6 +1,5 @@
 package br.infnet.edu.wellington_projeto_de_bloco_delivery.business.service;
 
-import br.infnet.edu.wellington_projeto_de_bloco_delivery.*;
 import br.infnet.edu.wellington_projeto_de_bloco_delivery.business.exception.CepForaCoberturaException;
 import br.infnet.edu.wellington_projeto_de_bloco_delivery.business.exception.PedidoNaoEncontradoException;
 import br.infnet.edu.wellington_projeto_de_bloco_delivery.model.ItemPedido;
@@ -38,7 +37,7 @@ class PedidoServiceTest {
     private LogisticaService logisticaService;
 
     @InjectMocks
-    private com.delivery.business.service.PedidoService pedidoService;
+    private br.infnet.edu.wellington_projeto_de_bloco_delivery.business.service.PedidoService pedidoService;
 
     private Pedido pedido;
     private ItemPedido item1;
@@ -217,7 +216,7 @@ class PedidoServiceTest {
     @Test
     void deveGerarCodigoProtocoloUnico() throws Exception {
         // Usando reflexão para acessar o método privado
-        Method metodoGerarCodigo = com.delivery.business.service.PedidoService.class.getDeclaredMethod("gerarCodigoProtocolo");
+        Method metodoGerarCodigo = br.infnet.edu.wellington_projeto_de_bloco_delivery.business.service.PedidoService.class.getDeclaredMethod("gerarCodigoProtocolo");
         metodoGerarCodigo.setAccessible(true);
 
         // Act

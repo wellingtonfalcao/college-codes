@@ -78,8 +78,11 @@ public class Pedido {
     }
 
     public void calcularTotal() {
-        this.precoTotal = itens.stream()
-                .mapToDouble(ItemPedido::getSubtotal)
-                .sum();
+        this.precoTotal = 0.0;
+        if (itens != null) {
+            for (ItemPedido item : itens) {
+                this.precoTotal += item.getPrecoUnitario() * item.getQuantidade();
+            }
+        }
     }
 }
