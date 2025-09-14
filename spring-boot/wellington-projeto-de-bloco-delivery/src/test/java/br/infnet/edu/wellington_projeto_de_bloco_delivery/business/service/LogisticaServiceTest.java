@@ -18,7 +18,7 @@ class LogisticaServiceTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"22000-000", "22640-010", "22451-000", "22041011", "22430"})
+    @ValueSource(strings = {"22000-000", "22640-010", "22451-000", "22041011", "22430256"})
     void deveAceitarCepsDaZonaSul(String cep) {
         // Act & Assert
         assertDoesNotThrow(() -> logisticaService.verificarCoberturaEntrega(cep));

@@ -8,10 +8,10 @@ import br.infnet.edu.wellington_projeto_de_bloco_delivery.repository.PedidoRepos
 import br.infnet.edu.wellington_projeto_de_bloco_delivery.repository.ItemPedidoRepository;
 import br.infnet.edu.wellington_projeto_de_bloco_delivery.business.service.LogisticaService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -27,11 +27,11 @@ public class PedidoService {
     private LogisticaService logisticaService;
 
     public Pedido criarPedido(Pedido pedido) {
-        // 1. Calcular total automaticamente
-        pedido.calcularTotal();
-
-        // 2. Validar CEP (RF03)
+        // 1. Validar CEP PRIMEIRO (RF03) - se falhar, nem calcula o total
         logisticaService.verificarCoberturaEntrega(pedido.getCep());
+
+        // 2. Calcular total automaticamente
+        pedido.calcularTotal();
 
         // 3. Gerar código de protocolo único (RF06)
         pedido.setCodigoProtocolo(gerarCodigoProtocolo());
@@ -91,12 +91,21 @@ public class PedidoService {
         // Criar novo pedido baseado no anterior (RF08)
         Pedido novoPedido = new Pedido();
         novoPedido.setUsuarioId(pedidoAntigo.getUsuarioId());
-        novoPedido.setItens(pedidoAntigo.getItens());
         novoPedido.setCep(pedidoAntigo.getCep());
 
-        // Calcular o total antes de criar o pedido
-        novoPedido.calcularTotal();
+        // Criar NOVOS itens baseados nos itens antigos (não reutilizar a mesma lista)
+        List<ItemPedido> novosItens = new ArrayList<>();
+        if (pedidoAntigo.getItens() != null) {
+            for (ItemPedido itemAntigo : pedidoAntigo.getItens()) {
+                ItemPedido novoItem = new ItemPedido();
+                novoItem.setProdutoId(itemAntigo.getProdutoId());
+                novoItem.setQuantidade(itemAntigo.getQuantidade());
+                novoItem.setPrecoUnitario(itemAntigo.getPrecoUnitario());
+                novosItens.add(novoItem); // ✅ ADICIONAR À NOVA LISTA
+            }
+        }
 
+        novoPedido.setItens(novosItens); // ✅ USAR A NOVA LISTA DE ITENS
         return criarPedido(novoPedido);
     }
 
