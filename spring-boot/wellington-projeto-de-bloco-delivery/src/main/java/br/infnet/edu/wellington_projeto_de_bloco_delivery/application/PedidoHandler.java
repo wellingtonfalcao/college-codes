@@ -6,7 +6,6 @@ import br.infnet.edu.wellington_projeto_de_bloco_delivery.business.service.Logis
 import br.infnet.edu.wellington_projeto_de_bloco_delivery.business.service.PedidoService;
 import br.infnet.edu.wellington_projeto_de_bloco_delivery.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
@@ -15,7 +14,7 @@ import java.util.List;
 import java.util.Scanner;
 
 @Component
-public class ConsoleApp implements CommandLineRunner {
+public class PedidoHandler {
 
     @Autowired
     private PedidoService pedidoService;
@@ -23,95 +22,19 @@ public class ConsoleApp implements CommandLineRunner {
     @Autowired
     private LogisticaService logisticaService;
 
-    private Scanner scanner = new Scanner(System.in);
-    private List<Produto> produtos = new ArrayList<>();
-    private int pedidoCounter = 1;
-    private int itemPedidoCounter = 1;
+    @Autowired
+    private MenuHandler menuHandler;
 
-    @Override
-    public void run(String... args) throws Exception {
-        inicializarDados();
-        exibirMenuPrincipal();
-    }
+    private List<Produto> produtos;
+    private int pedidoCounter;
+    private int itemPedidoCounter;
 
-    private void inicializarDados() {
-
-        Produto p1 = new Produto();
-        p1.setId(1);
-        p1.setNome("Pizza Marguerita");
-        p1.setDescricao("Pizza clássica com molho de tomate, muçarela e manjericão");
-        p1.setPreco(45.90);
-        p1.setCategoriaId(1);
-
-        Produto p2 = new Produto();
-        p2.setId(2);
-        p2.setNome("Hambúrguer Artesanal");
-        p2.setDescricao("Hambúrguer 180g com queijo, bacon e molho especial");
-        p2.setPreco(32.50);
-        p2.setCategoriaId(2);
-
-        Produto p3 = new Produto();
-        p3.setId(3);
-        p3.setNome("Sushi Combinado");
-        p3.setDescricao("Combinado de sushi com 20 peças variadas");
-        p3.setPreco(89.90);
-        p3.setCategoriaId(3);
-
-        produtos.add(p1);
-        produtos.add(p2);
-        produtos.add(p3);
-    }
-
-
-    private void exibirMenuPrincipal() {
-        while (true) {
-            System.out.println("\n=== SISTEMA DE DELIVERY ===");
-            System.out.println("1. Fazer pedido");
-            System.out.println("2. Verificar CEP");
-            System.out.println("3. Listar pedidos");
-            System.out.println("4. Buscar pedido por ID");
-            System.out.println("5. Atualizar status do pedido");
-            System.out.println("6. Refazer pedido");
-            System.out.println("0. Sair");
-            System.out.print("Escolha uma opção: ");
-
-            int opcao = scanner.nextInt();
-            scanner.nextLine(); // Limpar buffer
-
-            switch (opcao) {
-                case 1:
-                    fazerPedido();
-                    break;
-                case 2:
-                    verificarCep();
-                    break;
-                case 3:
-                    listarPedidos();
-                    break;
-                case 4:
-                    buscarPedidoPorId();
-                    break;
-                case 5:
-                    atualizarStatusPedido();
-                    break;
-                case 6:
-                    refazerPedido();
-                    break;
-                case 0:
-                    System.out.println("Saindo do sistema...");
-                    return;
-                default:
-                    System.out.println("Opção inválida!");
-            }
-        }
-    }
-
-    private void fazerPedido() {
+    public void fazerPedido() {
         try {
             System.out.println("\n=== NOVO PEDIDO ===");
 
             System.out.print("Digite o CEP para entrega (ex: 22000-000): ");
-            String cep = scanner.nextLine();
+            String cep = menuHandler.getScanner().nextLine();
 
             logisticaService.verificarCoberturaEntrega(cep);
             System.out.println("✓ CEP válido! Área de entrega coberta.");
@@ -135,7 +58,7 @@ public class ConsoleApp implements CommandLineRunner {
             boolean continuar = true;
             while (continuar) {
                 System.out.print("\nDigite o ID do produto (0 para finalizar): ");
-                int produtoId = scanner.nextInt();
+                int produtoId = menuHandler.getScanner().nextInt();
 
                 if (produtoId == 0) {
                     continuar = false;
@@ -143,8 +66,8 @@ public class ConsoleApp implements CommandLineRunner {
                 }
 
                 System.out.print("Digite a quantidade: ");
-                int quantidade = scanner.nextInt();
-                scanner.nextLine(); // Limpar buffer
+                int quantidade = menuHandler.getScanner().nextInt();
+                menuHandler.getScanner().nextLine(); // Limpar buffer
 
                 Produto produtoSelecionado = produtos.stream()
                         .filter(p -> p.getId() == produtoId)
@@ -188,21 +111,7 @@ public class ConsoleApp implements CommandLineRunner {
         }
     }
 
-    private void verificarCep() {
-        System.out.println("\n************ VERIFICAR CEP ************");
-        System.out.print("Digite o CEP para verificação: ");
-        String cep = scanner.nextLine();
-
-        try {
-            boolean valido = logisticaService.verificarCoberturaEntrega(cep);
-            System.out.println("✅ CEP VÁLIDO! Área de entrega coberta.");
-            System.out.println("CEP: " + cep);
-        } catch (CepForaCoberturaException e) {
-            System.out.println("❌ CEP FORA DA ÁREA DE COBERTURA: " + e.getMessage());
-        }
-    }
-
-    private void listarPedidos() {
+    public void listarPedidos() {
         try {
             System.out.println("\n************ LISTA DE PEDIDOS ************");
             List<Pedido> pedidos = pedidoService.listarTodosPedidos();
@@ -231,11 +140,11 @@ public class ConsoleApp implements CommandLineRunner {
         }
     }
 
-    private void buscarPedidoPorId() {
+    public void buscarPedidoPorId() {
         System.out.println("\n=== BUSCAR PEDIDO ===");
         System.out.print("Digite o ID do pedido: ");
-        int id = scanner.nextInt();
-        scanner.nextLine(); // Limpar buffer
+        int id = menuHandler.getScanner().nextInt();
+        menuHandler.getScanner().nextLine(); // Limpar buffer
 
         try {
             Pedido pedido = pedidoService.buscarPedidoPorId(id);
@@ -261,11 +170,11 @@ public class ConsoleApp implements CommandLineRunner {
         }
     }
 
-    private void atualizarStatusPedido() {
+    public void atualizarStatusPedido() {
         System.out.println("\n=== ATUALIZAR STATUS ===");
         System.out.print("Digite o ID do pedido: ");
-        int id = scanner.nextInt();
-        scanner.nextLine(); // Limpar buffer
+        int id = menuHandler.getScanner().nextInt();
+        menuHandler.getScanner().nextLine(); // Limpar buffer
 
         System.out.println("Status disponíveis:");
         StatusPedido[] statuses = StatusPedido.values();
@@ -274,8 +183,8 @@ public class ConsoleApp implements CommandLineRunner {
         }
 
         System.out.print("Escolha o novo status: ");
-        int escolha = scanner.nextInt();
-        scanner.nextLine(); // Limpar buffer
+        int escolha = menuHandler.getScanner().nextInt();
+        menuHandler.getScanner().nextLine(); // Limpar buffer
 
         if (escolha < 1 || escolha > statuses.length) {
             System.out.println("Opção inválida!");
@@ -294,11 +203,11 @@ public class ConsoleApp implements CommandLineRunner {
         }
     }
 
-    private void refazerPedido() {
+    public void refazerPedido() {
         System.out.println("\n=== REFAZER PEDIDO ===");
         System.out.print("Digite o ID do pedido que deseja refazer: ");
-        int idAntigo = scanner.nextInt();
-        scanner.nextLine(); // Limpar buffer
+        int idAntigo = menuHandler.getScanner().nextInt();
+        menuHandler.getScanner().nextLine(); // Limpar buffer
 
         try {
             Pedido novoPedido = pedidoService.refazerPedido(idAntigo);
@@ -312,5 +221,18 @@ public class ConsoleApp implements CommandLineRunner {
         } catch (Exception e) {
             System.out.println("❌ Erro ao refazer pedido: " + e.getMessage());
         }
+    }
+
+    // Getters e Setters
+    public void setProdutos(List<Produto> produtos) {
+        this.produtos = produtos;
+    }
+
+    public void setPedidoCounter(int pedidoCounter) {
+        this.pedidoCounter = pedidoCounter;
+    }
+
+    public void setItemPedidoCounter(int itemPedidoCounter) {
+        this.itemPedidoCounter = itemPedidoCounter;
     }
 }
