@@ -1,0 +1,8 @@
+YOLOv8n 1.46
+YOLOv8m 1.47
+YOLOv8m 2.88
+
+
+yolo12n 0.88
+yolo12s 1.70
+2.60
