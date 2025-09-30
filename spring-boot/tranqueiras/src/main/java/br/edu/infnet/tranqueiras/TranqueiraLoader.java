@@ -1,7 +1,8 @@
 package br.edu.infnet.tranqueiras;
 
-import br.edu.infnet.tranqueiras.model.domain.Objeto;
-import br.edu.infnet.tranqueiras.model.service.ObjetoService;
+import br.edu.infnet.tranqueiras.model.domain.Categoria;
+import br.edu.infnet.tranqueiras.model.domain.Tranqueira;
+import br.edu.infnet.tranqueiras.model.service.TranqueiraService;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
@@ -10,22 +11,16 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.atomic.AtomicInteger;
 
 @Component //Classe que quando rodar a aplicação Spring Boot será acessada (Usando ApplicationRunner)
-public class ObjetoLoader implements ApplicationRunner {
+public class TranqueiraLoader implements ApplicationRunner {
 
     //injeção de dependencia
-    private final ObjetoService objetoService;
+    private final TranqueiraService tranqueiraService;
 
-    public ObjetoLoader(ObjetoService objetoService) {
-        this.objetoService = objetoService;
+    public TranqueiraLoader(TranqueiraService tranqueiraService) {
+        this.tranqueiraService = tranqueiraService;
     }
-
-    private final Map<Integer, Objeto> mapaObjeto = new HashMap<Integer, Objeto>();
-    private final AtomicInteger nextId = new AtomicInteger(1);
 
     @Override
     public void run(ApplicationArguments args) {
@@ -41,23 +36,26 @@ public class ObjetoLoader implements ApplicationRunner {
             String[] campos = null;
             while (linha != null) {
 
-                campos = linha.split(";");
+                campos = linha.split(",");
 
-                Objeto objeto = new Objeto();
+                Tranqueira tranqueira = new Tranqueira();
 
-                objeto.setNome(campos[0]);
-                objeto.setDescricao(campos[1]);
+                tranqueira.setNome(campos[0]);
+                tranqueira.setDescricao(campos[1]);
+                tranqueira.setCategoria(Categoria.valueOf(campos[2]));
+                tranqueira.setQuantidade(Integer.valueOf(campos[3]));
+                tranqueira.setLocalizacao(campos[4]);
+                tranqueira.setFabricante(campos[5]);
+                tranqueira.setModelo(campos[6]);
 
-                mapaObjeto.put(objeto.getId(), objeto);
-
+                tranqueiraService.incluir(tranqueira); // Encapsulado na camada de serviço
 
                 linha = bufferedReader.readLine();
             }
 
-            for(Objeto objeto: mapaObjeto.values()){
-                System.out.println("# " + objeto);
+            for(Tranqueira tranqueira : tranqueiraService.obterLista()){
+                System.out.println("# " + tranqueira);
             }
-
 
             bufferedReader.close();
         } catch (FileNotFoundException e) {

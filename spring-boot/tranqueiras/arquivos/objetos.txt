@@ -1,3 +1,12 @@
-Trena; Este é a descrição
-Ferro de Solda; Este é a descrição
-Tesoura; Este é a descrição
+Placa-mãe ASUS B450,Suporte AM4 DDR4,COMPUTADOR,2,Caixa 1,ASUS,B450M-A
+Memória RAM 8GB DDR4,Frequência 3200MHz,COMPUTADOR,4,Caixa 1,Kingston,HyperX Fury
+SSD 500GB,"SATA III 2.5""",COMPUTADOR,3,Caixa 2,Crucial,MX500
+Fonte 500W,80 Plus Bronze,COMPUTADOR,1,Caixa 2,Corsair,CX500
+Resistor 10kΩ,Pacote com 100 unidades,ELETRONICA,100,Caixa 3,Yageo,10kΩ 1/4W
+Capacitor 100uF,Pacote com 50 unidades,ELETRONICA,50,Caixa 3,Nichicon,100uF 16V
+Arduino Uno,Microcontrolador ATmega328P,ELETRONICA,2,Caixa 4,Arduino,UNO R3
+Transistor BC547,Pacote com 200 unidades,ELETRONICA,200,Caixa 3,ON Semiconductor,BC547
+Ferro de Solda 60W,Temperatura ajustável,FERRAMENTA,1,Estante A,Hikari,HK-936
+Multímetro Digital,Com medição de capacitância e frequência,FERRAMENTA,1,Estante A,Minipa,ET-2042
+Chave de Fenda Philips,Jogo com 6 tamanhos,FERRAMENTA,6,Estante B,Tramontina,Philips Pro
+Alicate de Corte,Para eletrônica,FERRAMENTA,2,Estante B,Gedore,170mm
