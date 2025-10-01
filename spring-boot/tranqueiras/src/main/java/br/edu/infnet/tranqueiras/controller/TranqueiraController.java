@@ -2,6 +2,8 @@ package br.edu.infnet.tranqueiras.controller;
 
 import br.edu.infnet.tranqueiras.model.domain.Tranqueira;
 import br.edu.infnet.tranqueiras.model.service.TranqueiraService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,30 +12,38 @@ import java.util.List;
 @RequestMapping("/api/tranqueiras")
 public class TranqueiraController {
 
-    //Injeção de dependencia
     private final TranqueiraService tranqueiraService;
+
     public TranqueiraController(TranqueiraService tranqueiraService) {
         this.tranqueiraService = tranqueiraService;
     }
 
-    //Obter lista de tranqueiras
     @GetMapping
-    public List<Tranqueira> obterTranqueiras() {
-        return tranqueiraService.obterLista();
+    public ResponseEntity<List<Tranqueira>> obterTranqueiras() {
+        return new ResponseEntity<>(tranqueiraService.obterLista(), HttpStatus.OK);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Tranqueira> obterPorId(@PathVariable Integer id) {
+        Tranqueira tranqueira = tranqueiraService.obterPorId(id);
+        return new ResponseEntity<>(tranqueira, HttpStatus.OK);
     }
 
     @PostMapping
-    public Tranqueira incluir(@RequestBody Tranqueira tranqueira) {
-        return tranqueiraService.incluir(tranqueira);
+    public ResponseEntity<Tranqueira> incluir(@RequestBody Tranqueira tranqueira) {
+        Tranqueira novaTranqueira = tranqueiraService.incluir(tranqueira);
+        return new ResponseEntity<>(novaTranqueira, HttpStatus.CREATED);
     }
 
     @DeleteMapping("/{id}")
-    public void excluir(@PathVariable("id") Integer id) {
+    public ResponseEntity<Void> excluir(@PathVariable Integer id) {
         tranqueiraService.excluir(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @PutMapping("/{id}")
-    public Tranqueira alterar(@PathVariable Integer id,@RequestBody Tranqueira tranqueira) {
-        return tranqueiraService.alterar(id, tranqueira);
+    public ResponseEntity<Tranqueira> alterar(@PathVariable Integer id, @RequestBody Tranqueira tranqueira) {
+        Tranqueira tranqueiraAtualizada = tranqueiraService.alterar(id, tranqueira);
+        return new ResponseEntity<>(tranqueiraAtualizada, HttpStatus.OK);
     }
 }
