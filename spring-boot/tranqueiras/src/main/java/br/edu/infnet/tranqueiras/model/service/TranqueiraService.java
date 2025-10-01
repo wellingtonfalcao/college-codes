@@ -24,4 +24,14 @@ public class TranqueiraService {
     public List<Tranqueira> obterLista(){
         return new ArrayList<Tranqueira>(mapaObjeto.values()); // Retornar uma nova coleção com os dados obtidos
     }
+
+    public void excluir(Integer id) {
+        mapaObjeto.remove(id);
+    }
+
+    public Tranqueira alterar(Integer id, Tranqueira tranqueiraAlterada) {
+        tranqueiraAlterada.setId(id);
+        mapaObjeto.put(tranqueiraAlterada.getId(), tranqueiraAlterada);
+        return tranqueiraAlterada;
+    }
 }

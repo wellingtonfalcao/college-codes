@@ -16,12 +16,14 @@ public class Tranqueira {
     private Boolean disponivel;
 
     public Tranqueira(String nome, String descricao, Categoria categoria, Integer quantidade, String localizacao, String fabricante, String modelo, Boolean disponivel) {
+        this.nome = nome;
         this.descricao = descricao;
-        this.setCategoria(Categoria.OUTROS);
-        this.setQuantidade(Constante.QNT_MINIMA);
-        this.setFabricante(Constante.FABRICANTE_GEN);
-        this.setModelo(Constante.MODELO_ND);
-        this.setDisponivel(true);
+        this.categoria = categoria != null ? categoria : Categoria.OUTROS;
+        this.quantidade = quantidade != null ? quantidade : Constante.QNT_MINIMA;
+        this.localizacao = localizacao;
+        this.fabricante = fabricante != null ? fabricante : Constante.FABRICANTE_GEN;
+        this.modelo = modelo != null ? modelo : Constante.MODELO_ND;
+        this.disponivel = disponivel != null ? disponivel : true;
     }
 
     public Tranqueira(String nome, String localizacao) {
@@ -30,7 +32,13 @@ public class Tranqueira {
         this.localizacao = localizacao;
     }
 
-    public Tranqueira () {}
+    public Tranqueira() {
+        this.categoria = Categoria.OUTROS;
+        this.quantidade = Constante.QNT_MINIMA;
+        this.fabricante = Constante.FABRICANTE_GEN;
+        this.modelo = Constante.MODELO_ND;
+        this.disponivel = true;
+    }
 
     public Boolean getDisponivel() {
         return disponivel;
