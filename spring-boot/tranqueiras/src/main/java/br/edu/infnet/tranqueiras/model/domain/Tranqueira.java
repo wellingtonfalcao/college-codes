@@ -1,5 +1,7 @@
 package br.edu.infnet.tranqueiras.model.domain;
 
+import br.edu.infnet.tranqueiras.auxiliares.Constante;
+
 public class Tranqueira {
 
     private Integer id;
@@ -11,6 +13,32 @@ public class Tranqueira {
     private String localizacao;
     private String fabricante;
     private String modelo;
+    private Boolean disponivel;
+
+    public Tranqueira(String nome, String descricao, Categoria categoria, Integer quantidade, String localizacao, String fabricante, String modelo, Boolean disponivel) {
+        this.descricao = descricao;
+        this.setCategoria(Categoria.OUTROS);
+        this.setQuantidade(Constante.QNT_MINIMA);
+        this.setFabricante(Constante.FABRICANTE_GEN);
+        this.setModelo(Constante.MODELO_ND);
+        this.setDisponivel(true);
+    }
+
+    public Tranqueira(String nome, String localizacao) {
+        this();
+        this.setNome(nome);
+        this.localizacao = localizacao;
+    }
+
+    public Tranqueira () {}
+
+    public Boolean getDisponivel() {
+        return disponivel;
+    }
+
+    public void setDisponivel(Boolean disponivel) {
+        this.disponivel = disponivel;
+    }
 
     public Integer getId() {
         return id;
@@ -78,7 +106,7 @@ public class Tranqueira {
 
     @Override
     public String toString() {
-        return "Objeto{" +
+        return "Tranqueira{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", descricao='" + descricao + '\'' +
@@ -87,6 +115,7 @@ public class Tranqueira {
                 ", localizacao='" + localizacao + '\'' +
                 ", fabricante='" + fabricante + '\'' +
                 ", modelo='" + modelo + '\'' +
+                ", disponivel=" + disponivel +
                 '}';
     }
 }

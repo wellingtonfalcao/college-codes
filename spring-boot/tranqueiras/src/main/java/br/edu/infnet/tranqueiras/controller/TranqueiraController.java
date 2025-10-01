@@ -11,13 +11,16 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/objetos")
 public class TranqueiraController {
-    private final TranqueiraService tranqueiraService;
 
+    //Injeção de dependencia
+    private final TranqueiraService tranqueiraService;
     public TranqueiraController(TranqueiraService tranqueiraService) {
         this.tranqueiraService = tranqueiraService;
     }
+
+    //Obter lista de tranqueiras
     @GetMapping
     public List<Tranqueira> obterObjetos() {
-       return tranqueiraService.obterLista();
+        return tranqueiraService.obterLista();
     }
 }

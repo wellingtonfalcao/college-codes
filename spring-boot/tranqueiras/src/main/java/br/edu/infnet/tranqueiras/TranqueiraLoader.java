@@ -24,7 +24,7 @@ public class TranqueiraLoader implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) {
-        String arquivo = "arquivos/objetos.txt";
+        String arquivo = "arquivos/lista-objetos.txt";
 
         //Leitura do arquivo
         FileReader fileReader;
@@ -47,6 +47,7 @@ public class TranqueiraLoader implements ApplicationRunner {
                 tranqueira.setLocalizacao(campos[4]);
                 tranqueira.setFabricante(campos[5]);
                 tranqueira.setModelo(campos[6]);
+                tranqueira.setDisponivel(Boolean.valueOf(campos[7]));
 
                 tranqueiraService.incluir(tranqueira); // Encapsulado na camada de serviço
 
