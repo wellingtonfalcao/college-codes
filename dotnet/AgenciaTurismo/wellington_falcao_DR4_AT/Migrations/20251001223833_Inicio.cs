@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace wellington_falcao_DR4_AT.Migrations
+namespace AgenciaTurismo.Migrations
 {
     /// <inheritdoc />
     public partial class Inicio : Migration
@@ -56,8 +56,8 @@ namespace wellington_falcao_DR4_AT.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -65,7 +65,7 @@ namespace wellington_falcao_DR4_AT.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "PacoteTuristicos",
+                name: "PacotesTuristicos",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -77,7 +77,7 @@ namespace wellington_falcao_DR4_AT.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PacoteTuristicos", x => x.Id);
+                    table.PrimaryKey("PK_PacotesTuristicos", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -200,9 +200,9 @@ namespace wellington_falcao_DR4_AT.Migrations
                 {
                     table.PrimaryKey("PK_Destinos", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Destinos_PacoteTuristicos_PacoteTuristicoId",
+                        name: "FK_Destinos_PacotesTuristicos_PacoteTuristicoId",
                         column: x => x.PacoteTuristicoId,
-                        principalTable: "PacoteTuristicos",
+                        principalTable: "PacotesTuristicos",
                         principalColumn: "Id");
                 });
 
@@ -226,9 +226,9 @@ namespace wellington_falcao_DR4_AT.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Reservas_PacoteTuristicos_PacoteTuristicoId",
+                        name: "FK_Reservas_PacotesTuristicos_PacoteTuristicoId",
                         column: x => x.PacoteTuristicoId,
-                        principalTable: "PacoteTuristicos",
+                        principalTable: "PacotesTuristicos",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -322,7 +322,7 @@ namespace wellington_falcao_DR4_AT.Migrations
                 name: "Clientes");
 
             migrationBuilder.DropTable(
-                name: "PacoteTuristicos");
+                name: "PacotesTuristicos");
         }
     }
 }

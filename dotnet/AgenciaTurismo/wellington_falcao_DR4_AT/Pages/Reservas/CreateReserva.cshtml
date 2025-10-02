@@ -1,0 +1,66 @@
+﻿@page
+@model wellington_falcao_DR4_AT.Pages.Reservas.CreateReservaModel
+@{
+    ViewData["Title"] = "Criar Reserva";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <h4>Erros de validação:</h4>
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Reserva.ClienteId"></label>
+        <select asp-for="Reserva.ClienteId" asp-items="Model.Clientes" class="form-control">
+            <option value="">-- Selecione um Cliente --</option>
+        </select>
+        <span asp-validation-for="Reserva.ClienteId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Reserva.PacoteTuristicoId"></label>
+        <select asp-for="Reserva.PacoteTuristicoId" asp-items="Model.Pacotes" class="form-control">
+            <option value="">-- Selecione um Pacote --</option>
+        </select>
+        <span asp-validation-for="Reserva.PacoteTuristicoId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Reserva.DataReserva"></label>
+        <input asp-for="Reserva.DataReserva" type="date" class="form-control" />
+        <span asp-validation-for="Reserva.DataReserva" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar Reserva</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        // Set min date to today
+        document.addEventListener('DOMContentLoaded', function() {
+            var today = new Date().toISOString().split('T')[0];
+            document.getElementById('Reserva_DataReserva').min = today;
+        });
+    </script>
+}

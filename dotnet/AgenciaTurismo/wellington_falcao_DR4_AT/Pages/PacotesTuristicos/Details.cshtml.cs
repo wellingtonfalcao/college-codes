@@ -28,7 +28,7 @@ namespace wellington_falcao_DR4_AT.Pages.PacotesTuristicos
                 return NotFound();
             }
 
-            var pacoteturistico = await _context.PacoteTuristicos.FirstOrDefaultAsync(m => m.Id == id);
+            var pacoteturistico = await _context.PacotesTuristicos.FirstOrDefaultAsync(m => m.Id == id);
             if (pacoteturistico == null)
             {
                 return NotFound();

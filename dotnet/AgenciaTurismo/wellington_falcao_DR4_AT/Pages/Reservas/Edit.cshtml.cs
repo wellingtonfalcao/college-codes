@@ -37,7 +37,7 @@ namespace wellington_falcao_DR4_AT.Pages.Reservas
             }
             Reserva = reserva;
            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id");
-           ViewData["PacoteTuristicoId"] = new SelectList(_context.PacoteTuristicos, "Id", "Id");
+           ViewData["PacoteTuristicoId"] = new SelectList(_context.PacotesTuristicos, "Id", "Id");
             return Page();
         }
 

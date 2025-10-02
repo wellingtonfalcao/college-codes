@@ -29,7 +29,7 @@ namespace wellington_falcao_DR4_AT.Pages.PacotesTuristicos
                 return NotFound();
             }
 
-            var pacoteturistico = await _context.PacoteTuristicos.FirstOrDefaultAsync(m => m.Id == id);
+            var pacoteturistico = await _context.PacotesTuristicos.FirstOrDefaultAsync(m => m.Id == id);
 
             if (pacoteturistico == null)
             {
@@ -49,11 +49,11 @@ namespace wellington_falcao_DR4_AT.Pages.PacotesTuristicos
                 return NotFound();
             }
 
-            var pacoteturistico = await _context.PacoteTuristicos.FindAsync(id);
+            var pacoteturistico = await _context.PacotesTuristicos.FindAsync(id);
             if (pacoteturistico != null)
             {
                 PacoteTuristico = pacoteturistico;
-                _context.PacoteTuristicos.Remove(PacoteTuristico);
+                _context.PacotesTuristicos.Remove(PacoteTuristico);
                 await _context.SaveChangesAsync();
             }
 

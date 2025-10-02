@@ -22,7 +22,7 @@ namespace wellington_falcao_DR4_AT.Pages.Reservas
         public IActionResult OnGet()
         {
         ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id");
-        ViewData["PacoteTuristicoId"] = new SelectList(_context.PacoteTuristicos, "Id", "Id");
+        ViewData["PacoteTuristicoId"] = new SelectList(_context.PacotesTuristicos, "Id", "Id");
             return Page();
         }
 
@@ -37,10 +37,15 @@ namespace wellington_falcao_DR4_AT.Pages.Reservas
                 return Page();
             }
 
-            _context.Reservas.Add(Reserva);
+            // Configurar alerta de capacidade 
+              _context.Reservas.Add(Reserva);
             await _context.SaveChangesAsync();
+
+            // Verificar capacidade após criar reserva
+            Reserva.ChecarCapacidade(_context, Reserva.PacoteTuristicoId);
 
             return RedirectToPage("./Index");
         }
+
     }
 }

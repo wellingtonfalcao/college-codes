@@ -30,7 +30,7 @@ namespace wellington_falcao_DR4_AT.Pages.PacotesTuristicos
                 return NotFound();
             }
 
-            var pacoteturistico =  await _context.PacoteTuristicos.FirstOrDefaultAsync(m => m.Id == id);
+            var pacoteturistico =  await _context.PacotesTuristicos.FirstOrDefaultAsync(m => m.Id == id);
             if (pacoteturistico == null)
             {
                 return NotFound();
@@ -71,7 +71,7 @@ namespace wellington_falcao_DR4_AT.Pages.PacotesTuristicos
 
         private bool PacoteTuristicoExists(int id)
         {
-            return _context.PacoteTuristicos.Any(e => e.Id == id);
+            return _context.PacotesTuristicos.Any(e => e.Id == id);
         }
     }
 }

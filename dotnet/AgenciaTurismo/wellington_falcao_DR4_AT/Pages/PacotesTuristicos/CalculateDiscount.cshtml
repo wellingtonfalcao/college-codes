@@ -1,0 +1,25 @@
+﻿@page
+@model AgenciaTurismo.Pages.PacotesTuristicos.CalculateDiscountModel
+@{
+    ViewData["Title"] = "Calcular Desconto";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label>Preço Original:</label>
+        <input asp-for="PrecoOriginal" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Calcular Desconto</button>
+</form>
+<div>
+    <a asp-page="Index">Voltar</a>
+</div>
+
+@if (Model.PrecoComDesconto > 0)
+{
+    <div class="mt-3">
+        <strong>Preço com 10% de desconto: @Model.PrecoComDesconto.ToString("C")</strong>
+    </div>
+}

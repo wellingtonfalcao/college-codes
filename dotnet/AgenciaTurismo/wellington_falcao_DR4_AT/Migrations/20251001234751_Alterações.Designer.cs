@@ -9,11 +9,11 @@ using wellington_falcao_DR4_AT.Data;
 
 #nullable disable
 
-namespace wellington_falcao_DR4_AT.Migrations
+namespace AgenciaTurismo.Migrations
 {
     [DbContext(typeof(AgenciaViagemDbContext))]
-    [Migration("20251001065803_Adicionadas as Identity")]
-    partial class AdicionadasasIdentity
+    [Migration("20251001234751_Alterações")]
+    partial class Alterações
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -236,10 +236,13 @@ namespace wellington_falcao_DR4_AT.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
@@ -291,11 +294,12 @@ namespace wellington_falcao_DR4_AT.Migrations
 
                     b.Property<string>("Titulo")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("PacoteTuristicos");
+                    b.ToTable("PacotesTuristicos");
                 });
 
             modelBuilder.Entity("wellington_falcao_DR4_AT.Models.Reserva", b =>

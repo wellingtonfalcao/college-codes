@@ -1,7 +1,9 @@
+using AgenciaTurismo.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using wellington_falcao_DR4_AT.Data;
+using wellington_falcao_DR4_AT.Models;
 
 namespace wellington_falcao_DR4_AT
 {
@@ -53,5 +55,21 @@ namespace wellington_falcao_DR4_AT
 
             app.Run();
         }
+        // Metodo para configurar o alerta de capacidade
+        public static void ConfigureReservaCapacidadeAlert()
+        {
+            Reserva.CapacidadeAlcancada += (msg, capacidade) =>
+            {
+                Console.WriteLine($"ALERTA DE CAPACIDADE: {msg}");
+                Console.WriteLine($"Capacidade máxima: {capacidade}");
+            };
+        }
+
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            LoggingService.ConfigureMulticastLogging();
+            ConfigureReservaCapacidadeAlert();
+        }
+
     }
 }

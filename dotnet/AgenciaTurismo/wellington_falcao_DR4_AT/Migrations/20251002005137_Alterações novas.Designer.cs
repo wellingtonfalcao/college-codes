@@ -3,17 +3,20 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using wellington_falcao_DR4_AT.Data;
 
 #nullable disable
 
-namespace wellington_falcao_DR4_AT.Migrations
+namespace AgenciaTurismo.Migrations
 {
     [DbContext(typeof(AgenciaViagemDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251002005137_Alterações novas")]
+    partial class Alteraçõesnovas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -233,10 +236,13 @@ namespace wellington_falcao_DR4_AT.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
@@ -292,7 +298,7 @@ namespace wellington_falcao_DR4_AT.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PacoteTuristicos");
+                    b.ToTable("PacotesTuristicos");
                 });
 
             modelBuilder.Entity("wellington_falcao_DR4_AT.Models.Reserva", b =>

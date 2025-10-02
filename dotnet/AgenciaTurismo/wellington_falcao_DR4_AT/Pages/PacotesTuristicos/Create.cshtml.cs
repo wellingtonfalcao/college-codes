@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using wellington_falcao_DR4_AT.Data;
 using wellington_falcao_DR4_AT.Models;
 
@@ -12,30 +8,40 @@ namespace wellington_falcao_DR4_AT.Pages.PacotesTuristicos
 {
     public class CreateModel : PageModel
     {
-        private readonly wellington_falcao_DR4_AT.Data.AgenciaViagemDbContext _context;
+        private readonly AgenciaViagemDbContext _context;
 
-        public CreateModel(wellington_falcao_DR4_AT.Data.AgenciaViagemDbContext context)
+        public CreateModel(AgenciaViagemDbContext context)
         {
             _context = context;
         }
 
-        public IActionResult OnGet()
+        [BindProperty]
+        public PacoteTuristico PacoteTuristico { get; set; }
+
+        public List<Destino> DestinosDisponiveis { get; set; }
+
+        public async Task<IActionResult> OnGetAsync()
         {
+            DestinosDisponiveis = await _context.Destinos.ToListAsync();
             return Page();
         }
 
-        [BindProperty]
-        public PacoteTuristico PacoteTuristico { get; set; } = default!;
-
-        // For more information, see https://aka.ms/RazorPagesCRUD.
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(int[] selectedDestinos)
         {
             if (!ModelState.IsValid)
             {
+                DestinosDisponiveis = await _context.Destinos.ToListAsync();
                 return Page();
             }
 
-            _context.PacoteTuristicos.Add(PacoteTuristico);
+            if (selectedDestinos != null && selectedDestinos.Length > 0)
+            {
+                PacoteTuristico.Destinos = await _context.Destinos
+                    .Where(d => selectedDestinos.Contains(d.Id))
+                    .ToListAsync();
+            }
+
+            _context.PacotesTuristicos.Add(PacoteTuristico);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

@@ -2,13 +2,13 @@
 @model wellington_falcao_DR4_AT.Pages.Reservas.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Reservas";
 }
 
-<h1>Index</h1>
+<h1>@ViewData["Title"]</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="CreateReserva">Cadastrar Reserva</a>
 </p>
 <table class="table">
     <thead>
@@ -29,10 +29,10 @@
 @foreach (var item in Model.Reserva) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Cliente.Id)
+                @Html.DisplayFor(modelItem => item.Cliente.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PacoteTuristico.Id)
+                @Html.DisplayFor(modelItem => item.PacoteTuristico.Titulo)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DataReserva)

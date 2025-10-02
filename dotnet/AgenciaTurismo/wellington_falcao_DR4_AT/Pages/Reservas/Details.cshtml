@@ -2,36 +2,46 @@
 @model wellington_falcao_DR4_AT.Pages.Reservas.DetailsModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes da Reserva";
 }
 
-<h1>Details</h1>
+<h1>@ViewData["Title"]</h1>
 
 <div>
     <h4>Reserva</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Reserva.Cliente)
+            Cliente
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Reserva.Cliente.Id)
+            @Model.Reserva.Cliente.Nome
+            <br />
+            <small class="text-muted">@Model.Reserva.Cliente.Email</small>
         </dd>
+
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Reserva.PacoteTuristico)
+            Pacote Turístico
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Reserva.PacoteTuristico.Id)
+            @Model.Reserva.PacoteTuristico.Titulo
+            <br />
+            <small class="text-muted">
+                Preço: R$ @Model.Reserva.PacoteTuristico.Preco<br />
+                Data de Início: @Model.Reserva.PacoteTuristico.DataInicio.ToString("dd/MM/yyyy")<br />
+                Capacidade: @Model.Reserva.PacoteTuristico.CapacidadeMaxima pessoas
+            </small>
         </dd>
+
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Reserva.DataReserva)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Reserva.DataReserva)
+            @Model.Reserva.DataReserva.ToString("dd/MM/yyyy")
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.Reserva.Id">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Edit" asp-route-id="@Model.Reserva.Id">Editar</a>
+    <a asp-page="./Index">Voltar para a Lista</a>
 </div>

@@ -18,7 +18,7 @@ namespace wellington_falcao_DR4_AT.Pages.PacotesTuristicos
 
         public async Task OnGetAsync()
         {
-            PacoteTuristico = await _context.PacoteTuristicos.ToListAsync();
+            PacoteTuristico = await _context.PacotesTuristicos.ToListAsync();
         }
     }
 }

@@ -1,0 +1,34 @@
+﻿@page
+@model AgenciaTurismo.Pages.ViewNotesModel
+@{
+    ViewData["Title"] = "Sistema de Notas";
+}
+
+<h2>Sistema de Notas</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label for="noteContent" class="form-label">Nova anotação</label>
+        <textarea class="form-control" id="noteContent" name="NoteContent" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar Nota</button>
+</form>
+
+<hr />
+
+<h3>Anotações existentes</h3>
+<ul>
+    @foreach (var file in Model.Files)
+    {
+        <li>
+            <a asp-page="./ViewNotes" asp-route-fileName="@file">@file</a>
+        </li>
+    }
+</ul>
+
+@if (!string.IsNullOrEmpty(Model.SelectedContent))
+{
+    <hr />
+    <h4>Conteúdo da anotação: @Model.SelectedFileName</h4>
+    <pre>@Model.SelectedContent</pre>
+}

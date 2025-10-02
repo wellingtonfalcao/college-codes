@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using wellington_falcao_DR4_AT.Data;
@@ -12,9 +8,9 @@ namespace wellington_falcao_DR4_AT.Pages.Reservas
 {
     public class DetailsModel : PageModel
     {
-        private readonly wellington_falcao_DR4_AT.Data.AgenciaViagemDbContext _context;
+        private readonly AgenciaViagemDbContext _context;
 
-        public DetailsModel(wellington_falcao_DR4_AT.Data.AgenciaViagemDbContext context)
+        public DetailsModel(AgenciaViagemDbContext context)
         {
             _context = context;
         }
@@ -28,7 +24,12 @@ namespace wellington_falcao_DR4_AT.Pages.Reservas
                 return NotFound();
             }
 
-            var reserva = await _context.Reservas.FirstOrDefaultAsync(m => m.Id == id);
+            // INCLUIR os dados relacionados com Include()
+            var reserva = await _context.Reservas
+                .Include(r => r.Cliente)           // Inclui dados do cliente
+                .Include(r => r.PacoteTuristico)   // Inclui dados do pacote turístico
+                .FirstOrDefaultAsync(m => m.Id == id);
+
             if (reserva == null)
             {
                 return NotFound();
