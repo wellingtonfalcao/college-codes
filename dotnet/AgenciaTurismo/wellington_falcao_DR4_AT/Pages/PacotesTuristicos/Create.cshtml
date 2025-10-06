@@ -2,12 +2,12 @@
 @model wellington_falcao_DR4_AT.Pages.PacotesTuristicos.CreateModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Criar Pacote Turístico";
 }
 
-<h1>Create</h1>
+<h1>@ViewData["Title"]</h1>
 
-<h4>PacoteTuristico</h4>
+<h4>Pacote Turístico</h4>
 <hr />
 <div class="row">
     <p><a asp-page="CalculateDiscount">Calcular Desconto</a></p>
@@ -42,7 +42,7 @@
 </div>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="Index" class="btn btn-secondary">Back to List</a>
 </div>
 
 @section Scripts {

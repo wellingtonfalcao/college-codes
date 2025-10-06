@@ -6,20 +6,24 @@ namespace wellington_falcao_DR4_AT.Models
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "O Título é obrigatório.")]
         [MinLength(3)]
+        [Display(Name = "Título")]
         public string Titulo { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "A Data é obrigatória.")]
         [DataType(DataType.Date)]
+        [Display(Name = "Data de Início")]
         public DateTime DataInicio { get; set; }
 
-        [Required]
         [Range(1, 1000)]
+        [Display(Name = "Capacidade Máxima")]
         public int CapacidadeMaxima { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "O Preço é obrigatório.")]
         [Range(0, 100000)]
+        [DataType(DataType.Currency)]
+        [Display(Name = "Preço")]
         public decimal Preco { get; set; }
 
         public List<Destino> Destinos { get; set; } = new List<Destino>();
